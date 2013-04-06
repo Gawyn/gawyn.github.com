@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://gawyn.github.com/sitemap.xml 
+Sitemap: http://Gawyn.github.com/sitemap.xml 

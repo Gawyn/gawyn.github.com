@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: tweetmovies | Cristian Planas]]></title>
-  <link href="http://gawyn.github.com/blog/categories/tweetmovies/atom.xml" rel="self"/>
-  <link href="http://gawyn.github.com/"/>
-  <updated>2013-04-06T14:38:15+02:00</updated>
-  <id>http://gawyn.github.com/</id>
+  <link href="http://Gawyn.github.com/blog/categories/tweetmovies/atom.xml" rel="self"/>
+  <link href="http://Gawyn.github.com/"/>
+  <updated>2013-04-06T15:02:26+02:00</updated>
+  <id>http://Gawyn.github.com/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
     <email><![CDATA[me@cristianplanas.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Presenting TweetMovies]]></title>
-    <link href="http://gawyn.github.com/blog/2012/02/08/presenting-tweetmovies/"/>
+    <link href="http://Gawyn.github.com/blog/2012/02/08/presenting-tweetmovies/"/>
     <updated>2012-02-08T22:37:00+01:00</updated>
-    <id>http://gawyn.github.com/blog/2012/02/08/presenting-tweetmovies</id>
+    <id>http://Gawyn.github.com/blog/2012/02/08/presenting-tweetmovies</id>
     <content type="html"><![CDATA[<p>When the Web is your passion, you don't have enough with your job:
 you continue developing your own tools or applications after hours. Web
 developers like to have their own

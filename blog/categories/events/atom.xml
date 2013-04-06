@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: events | Cristian Planas]]></title>
-  <link href="http://gawyn.github.com/blog/categories/events/atom.xml" rel="self"/>
-  <link href="http://gawyn.github.com/"/>
-  <updated>2013-04-06T14:38:15+02:00</updated>
-  <id>http://gawyn.github.com/</id>
+  <link href="http://Gawyn.github.com/blog/categories/events/atom.xml" rel="self"/>
+  <link href="http://Gawyn.github.com/"/>
+  <updated>2013-04-06T15:02:26+02:00</updated>
+  <id>http://Gawyn.github.com/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
     <email><![CDATA[me@cristianplanas.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[BaRuCo 2012 review]]></title>
-    <link href="http://gawyn.github.com/blog/2012/09/11/baruco-2012-review/"/>
+    <link href="http://Gawyn.github.com/blog/2012/09/11/baruco-2012-review/"/>
     <updated>2012-09-11T15:56:00+02:00</updated>
-    <id>http://gawyn.github.com/blog/2012/09/11/baruco-2012-review</id>
+    <id>http://Gawyn.github.com/blog/2012/09/11/baruco-2012-review</id>
     <content type="html"><![CDATA[<p>Last weekend I was able to assist to the <a href="http://www.baruco.org/">Barcelona Ruby Conference</a>, organized by our friends of <a href="http://www.codegram.com/">Codegram</a>. The list of speakers looked very promising and the event didn’t disappoint anyone.</p>
 
 <p>First of all it's important to remark how amazing the organization was: all the attendants were really well treated. In the picture below, you can see the delicious breakfast that we were able to enjoy just before the first speakers started:</p>

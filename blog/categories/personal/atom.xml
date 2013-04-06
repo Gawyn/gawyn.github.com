@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: personal | Cristian Planas]]></title>
-  <link href="http://gawyn.github.com/blog/categories/personal/atom.xml" rel="self"/>
-  <link href="http://gawyn.github.com/"/>
-  <updated>2013-04-06T14:38:15+02:00</updated>
-  <id>http://gawyn.github.com/</id>
+  <link href="http://Gawyn.github.com/blog/categories/personal/atom.xml" rel="self"/>
+  <link href="http://Gawyn.github.com/"/>
+  <updated>2013-04-06T15:02:26+02:00</updated>
+  <id>http://Gawyn.github.com/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
     <email><![CDATA[me@cristianplanas.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Welcome to my new blog!]]></title>
-    <link href="http://gawyn.github.com/blog/2012/01/29/welcome-to-my-new-blog/"/>
+    <link href="http://Gawyn.github.com/blog/2012/01/29/welcome-to-my-new-blog/"/>
     <updated>2012-01-29T03:44:00+01:00</updated>
-    <id>http://gawyn.github.com/blog/2012/01/29/welcome-to-my-new-blog</id>
+    <id>http://Gawyn.github.com/blog/2012/01/29/welcome-to-my-new-blog</id>
     <content type="html"><![CDATA[<p>Being at the same time an IT guy and a literature lover, I guess it's normal I created a lot of blogs in my life: <a href="http://gawyn.blogspot.com/">El blog de Gawyn</a>, <a href="http://librosyfilms.wordpress.com/">Libros y Films</a>, and specially <a href="http://cafemarat.blogspot.com/">Café Marat</a> a blog with 73 (long) entries written in almost two years and that even after not being updated for more then three years, is still receiving almost 1.000 visits every month. I also created a cinema magazine, <a href="http://fundidoanegro.net">Fundido a Negro</a> that was also my first experience with Rails.</p>
 
 <p>But, so far, this blogs were essencially about some of my other passions: literature and cinema. <strong>This blog will be different: it's main topic will be my experiences with Ruby and other languages.</strong> Of course, I know that it's always risky to predict the real content of something before creating it, but at least that is my purpose.</p>

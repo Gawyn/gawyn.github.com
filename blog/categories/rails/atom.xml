@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: rails | Cristian Planas]]></title>
-  <link href="http://gawyn.github.com/blog/categories/rails/atom.xml" rel="self"/>
-  <link href="http://gawyn.github.com/"/>
-  <updated>2013-04-06T14:38:15+02:00</updated>
-  <id>http://gawyn.github.com/</id>
+  <link href="http://Gawyn.github.com/blog/categories/rails/atom.xml" rel="self"/>
+  <link href="http://Gawyn.github.com/"/>
+  <updated>2013-04-06T15:02:26+02:00</updated>
+  <id>http://Gawyn.github.com/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
     <email><![CDATA[me@cristianplanas.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Big models, small controllers]]></title>
-    <link href="http://gawyn.github.com/blog/2012/02/01/big-models/"/>
+    <link href="http://Gawyn.github.com/blog/2012/02/01/big-models/"/>
     <updated>2012-02-01T11:04:00+01:00</updated>
-    <id>http://gawyn.github.com/blog/2012/02/01/big-models</id>
+    <id>http://Gawyn.github.com/blog/2012/02/01/big-models</id>
     <content type="html"><![CDATA[<p>OK, yeah, the title of this entry is one of the most common and repeated
 sentences about Rails (and MVC in general) development. But there is
 something else: <strong>it's a big, big, truth</strong>.</p>

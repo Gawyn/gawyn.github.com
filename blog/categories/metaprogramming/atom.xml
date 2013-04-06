@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: metaprogramming | Cristian Planas]]></title>
-  <link href="http://gawyn.github.com/blog/categories/metaprogramming/atom.xml" rel="self"/>
-  <link href="http://gawyn.github.com/"/>
-  <updated>2013-04-06T14:38:15+02:00</updated>
-  <id>http://gawyn.github.com/</id>
+  <link href="http://Gawyn.github.com/blog/categories/metaprogramming/atom.xml" rel="self"/>
+  <link href="http://Gawyn.github.com/"/>
+  <updated>2013-04-06T15:02:26+02:00</updated>
+  <id>http://Gawyn.github.com/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
     <email><![CDATA[me@cristianplanas.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Why do I love method_missing]]></title>
-    <link href="http://gawyn.github.com/blog/2012/01/29/why-do-i-love-method-missing/"/>
+    <link href="http://Gawyn.github.com/blog/2012/01/29/why-do-i-love-method-missing/"/>
     <updated>2012-01-29T17:27:00+01:00</updated>
-    <id>http://gawyn.github.com/blog/2012/01/29/why-do-i-love-method-missing</id>
+    <id>http://Gawyn.github.com/blog/2012/01/29/why-do-i-love-method-missing</id>
     <content type="html"><![CDATA[<p>Every Ruby developer has some tricks that he loves. Sometimes it's not even necessary to use them a lot: it's enough if you like them only in a philosophical or aesthetical way. When you talk about Ruby to a newcomer, the first thing you do is to give an enthusiastic description about that technique, your favourite one. And for me, I guess it's <code>method_missing</code>.</p>
 
 <h2>What is <code>method_missing</code>?</h2>
