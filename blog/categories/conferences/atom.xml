@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: conferences | Cristian Planas]]></title>
+  <link href="http://gawyn.github.com/blog/categories/conferences/atom.xml" rel="self"/>
+  <link href="http://gawyn.github.com/"/>
+  <updated>2013-04-06T14:38:15+02:00</updated>
+  <id>http://gawyn.github.com/</id>
+  <author>
+    <name><![CDATA[Cristian Planas]]></name>
+    <email><![CDATA[me@cristianplanas.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Programmer Anarchy]]></title>
+    <link href="http://gawyn.github.com/blog/2012/02/05/programmer-anarchy/"/>
+    <updated>2012-02-05T13:10:00+01:00</updated>
+    <id>http://gawyn.github.com/blog/2012/02/05/programmer-anarchy</id>
+    <content type="html"><![CDATA[<p>In the <a href="http://rupy.eu/">Rupy 2011</a>, I assisted to some very interesting
+conferences, like the ones by <a href="https://twitter.com/#!/josevalim">José Valim</a> or <a href="https://twitter.com/#!/wycats">Yehuda Katz</a>.
+ But the conference I remember the most is, by far, Programmer Anarchy.</p>
+
+<p>In it, <a href="https://twitter.com/#!/fgeorge52">Fred George</a> exposes with a great amount of humor a development
+process where programmers are not just developing the application, but
+designing and modifying it beyond the customer's expectations. He
+also reasons the need of removing certain roles (most of them, actually)
+that don't produce code in the development process. As the popular agile (or antiagile?) manifesto says...
+<a href="http://programming-motherfucker.com/">Programming, Motherfucker!</a></p>
+
+<p>Personally, I have always thought that developers should take a more
+active role when discussing the application with the customer: how many
+times have we ended coding some feature that we knew for sure that was
+stupid? We have to remember that, in the end, we are fucking technology
+experts, specially compared to most of the clients (yeah, not being too
+humble now). We should be stakeholders, and not minor ones, of our own
+projects.</p>
+
+<p>Here you can watch the conference. I would recommend it, even if you are
+not very interested in the topic. If you know the IT world, it's really
+hilarous:</p>
+
+<p><div class="embed-responsive-container"><iframe src="http://player.vimeo.com/video/32447325 "></iframe></div></p>
+]]></content>
+  </entry>
+  
+</feed>

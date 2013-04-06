@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: events | Cristian Planas]]></title>
+  <link href="http://gawyn.github.com/blog/categories/events/atom.xml" rel="self"/>
+  <link href="http://gawyn.github.com/"/>
+  <updated>2013-04-06T14:38:15+02:00</updated>
+  <id>http://gawyn.github.com/</id>
+  <author>
+    <name><![CDATA[Cristian Planas]]></name>
+    <email><![CDATA[me@cristianplanas.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[BaRuCo 2012 review]]></title>
+    <link href="http://gawyn.github.com/blog/2012/09/11/baruco-2012-review/"/>
+    <updated>2012-09-11T15:56:00+02:00</updated>
+    <id>http://gawyn.github.com/blog/2012/09/11/baruco-2012-review</id>
+    <content type="html"><![CDATA[<p>Last weekend I was able to assist to the <a href="http://www.baruco.org/">Barcelona Ruby Conference</a>, organized by our friends of <a href="http://www.codegram.com/">Codegram</a>. The list of speakers looked very promising and the event didn’t disappoint anyone.</p>
+
+<p>First of all it's important to remark how amazing the organization was: all the attendants were really well treated. In the picture below, you can see the delicious breakfast that we were able to enjoy just before the first speakers started:</p>
+
+<p><a href="http://tweetmovies.net"><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/baruco_breakfast.jpg" title="Breakfast at BaRuCo" alt="A delicious breakfast for the BaRuCo attendants"></a></p>
+
+<p>But the main point in any conference is the quality of the talks, and BaRuCo speakers did a real good job: the quantity of the talks was small compared to other conferences, but most of them were really interesting. Some of them were slightly too technical for the audience who approaches for the first time the topic that is exposed, but most of them found the perfect middleground between depth and simplicity. However, there were some that stood out...</p>
+
+<ul>
+<li><p><strong>Bronze medal for...</strong>: <em>Programming workout</em> by Michal Taszycki. A description of how to get from beginner to master in any discipline, with some useful techniques for improving in any area. I really like this kind of talks with a broader, more humanistic scope.</p></li>
+<li><p><strong>Silver medal for...</strong>: <em>Micro-Service Architecture</em> by Fred George. I already praised in this blog <a href="/blog/2012/02/05/programmer-anarchy/">another awesome talk given by Mr. George</a>: he is a really gifted speaker. This time, he exposed how his company faced some difficult cases dividing the architecture in multiple applications, managing to reduce the complexity of the solution.</p></li>
+<li><p><strong>Gold medal for...</strong>: <em>Why Agile (A short history of software engineering, and other ideas that didn’t work)</em> by Paolo Perrotta: I was a big fan of Mr. Perrotta since I read Metaprogramming Ruby, a book which changed the way I understand developing; but now… fuck, everybody in the congress fell in love with him. He stole the show with a great and very funny talk about how the own concept of software engineering is a misunderstanding of our craft.</p></li>
+</ul>
+
+
+<p>Summarizing, looks like that Barcelona has a new you-can't-miss-it event. We are already waiting for 2013 tickets.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>TDD != BDD - Cristian Planas</title>
+  <meta name="author" content="Cristian Planas">
+
+  
+  <meta name="description" content="Talking with other developers, sometimes I notice a kind of confusion
+around the terms &#8216;TDD&#8217; and &#8216;BDD&#8217;. That was specially &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://gawyn.github.com/blog/2012/02/03/tdd-equals-bdd">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Cristian Planas" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28792819-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Cristian Planas</a></h1>
+  
+    <h2>Ideas of an adventurer developer</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search?q=cristian+planas+blog" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:gawyn.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">TDD != BDD</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-03T20:35:00+01:00" pubdate data-updated="true">Feb 3<span>rd</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Talking with other developers, sometimes I notice a kind of confusion
+around the terms &#8216;TDD&#8217; and &#8216;BDD&#8217;. That was specially strange for me in the RuPy 2011,
+when I was still not very sure of the difference between those two
+software development techniques, and (at least for me) everyone used
+them indifferently.</p>
+
+<p>But they are not the same. In fact, BDD is an evolution, or an
+extension, of TDD. Let&#8217;s try to define and point out the difference
+between them.</p>
+
+<h2>TDD (Test-Driven Development)</h2>
+
+<blockquote><p>All code is guilty until proven innocent.</p></blockquote>
+
+<p>In the university, we are taught that the main phases of the software are specification, design,
+ implementation and testing, in this order. In TDD, testing comes before implementation;
+ and thanks to some testing tools, it can be used as a kind of specification.</p>
+
+<p>In a TDD process, we develop first the test and then we work on the &#8220;real&#8221;
+ code until the test accepts it. In an advanced project, when we implement
+ a change into the code, we run all the tests, and not only the new one:
+ like this we can detect quickly if a new piece of code is causing
+ errors in old features.</p>
+
+<p><em>The TDD process:</em>
+<img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/tddSteps.jpg" title="TDD" alt="A diagram of TDD"></p>
+
+<h2>BDD (Behavior-Driven Development)</h2>
+
+<p>BDD is a business-like, natural language, user-approach to TDD. In it,
+we first define an acceptance test: we execute it and, obviously, it fails.
+Then we define a unit test: it fails too. Then, and only then, we can
+start with the code itself. When the given unit test passes, we execute
+again the acceptance test, and if it fails, we start the process all
+over again with a new unit test.</p>
+
+<p>Using Ruby speech, we could say that <strong>BDD wraps an acceptance test
+around a group of unit tests.</strong></p>
+
+<p><em>The BDD process:</em>
+<img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/atdd.jpg" title="TDD" alt="A diagram of TDD"></p>
+
+<p>In BDD we also try to make tests particularly readable, using tools like
+Rspec and Cucumber.</p>
+
+<h2>Conclusion</h2>
+
+<p>Even if it&#8217;s an expansion, and a good one, BDD is not &#8220;better&#8221; than TDD.
+It&#8217;s just different. In some cases, using BDD doesn&#8217;t have sense.
+For example, in a gem or a plugin, to test the behavior of the user is
+just impossible.</p>
+
+<p>Actually, developers instinctively understand that: they just are confused
+by the similar names of B(bi)DD and T(ti)DD. You don&#8217;t develop a gem using
+BDD, even if it sounds cool: it&#8217;s TDD.</p>
+
+<p>PS: Another day we should talk if BDD and TDD are so useful or if it&#8217;s
+only a hype.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Cristian Planas</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-03T20:35:00+01:00" pubdate data-updated="true">Feb 3<span>rd</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/agile/'>agile</a>, <a class='category' href='/blog/categories/bdd/'>bdd</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://gawyn.github.com/blog/2012/02/03/tdd-equals-bdd/" data-via="cristianplanas" data-counturl="http://gawyn.github.com/blog/2012/02/03/tdd-equals-bdd/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/02/01/big-models/" title="Previous Post: Big models, small controllers">&laquo; Big models, small controllers</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/02/05/programmer-anarchy/" title="Next Post: Programmer Anarchy">Programmer Anarchy &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>This is me!</h1>
+  <div style="margin-top: 10px">
+    <div style="float: left; margin-right: 10px; margin-top: 19px">
+      <img src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/small-me.png">
+    </div>
+    <p>I'm Cristian Planas, an hyperactive fellow who happens to be a developer. I am a movie lover and a bookworm. And very handsome, according to my mother.</p>
+    <p>Currently I work as the CTO of this very cool social game that everyone is talking about: <a href="http://playfulbet.com">Playfulbet</a>.
+  </div>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/03/10/playfulbet-wins-an-investment-forum/">Playfulbet wins an investment forum</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/16/on-slideshare-cover/">On Slideshare homepage</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/14/one-graph-to-rule-them-all/">One Graph to rule them all</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/12/10/playfulbet/">Playfulbet</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/10/25/a-short-history-of-software-engineering/">A short history of Software Engineering</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/gawyn">@gawyn</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'gawyn',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Cristian Planas -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'cristianplanas';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://gawyn.github.com/blog/2012/02/03/tdd-equals-bdd/';
+        var disqus_url = 'http://gawyn.github.com/blog/2012/02/03/tdd-equals-bdd/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: agile | Cristian Planas]]></title>
+  <link href="http://gawyn.github.com/blog/categories/agile/atom.xml" rel="self"/>
+  <link href="http://gawyn.github.com/"/>
+  <updated>2013-04-06T14:38:15+02:00</updated>
+  <id>http://gawyn.github.com/</id>
+  <author>
+    <name><![CDATA[Cristian Planas]]></name>
+    <email><![CDATA[me@cristianplanas.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Programmer Anarchy]]></title>
+    <link href="http://gawyn.github.com/blog/2012/02/05/programmer-anarchy/"/>
+    <updated>2012-02-05T13:10:00+01:00</updated>
+    <id>http://gawyn.github.com/blog/2012/02/05/programmer-anarchy</id>
+    <content type="html"><![CDATA[<p>In the <a href="http://rupy.eu/">Rupy 2011</a>, I assisted to some very interesting
+conferences, like the ones by <a href="https://twitter.com/#!/josevalim">José Valim</a> or <a href="https://twitter.com/#!/wycats">Yehuda Katz</a>.
+ But the conference I remember the most is, by far, Programmer Anarchy.</p>
+
+<p>In it, <a href="https://twitter.com/#!/fgeorge52">Fred George</a> exposes with a great amount of humor a development
+process where programmers are not just developing the application, but
+designing and modifying it beyond the customer's expectations. He
+also reasons the need of removing certain roles (most of them, actually)
+that don't produce code in the development process. As the popular agile (or antiagile?) manifesto says...
+<a href="http://programming-motherfucker.com/">Programming, Motherfucker!</a></p>
+
+<p>Personally, I have always thought that developers should take a more
+active role when discussing the application with the customer: how many
+times have we ended coding some feature that we knew for sure that was
+stupid? We have to remember that, in the end, we are fucking technology
+experts, specially compared to most of the clients (yeah, not being too
+humble now). We should be stakeholders, and not minor ones, of our own
+projects.</p>
+
+<p>Here you can watch the conference. I would recommend it, even if you are
+not very interested in the topic. If you know the IT world, it's really
+hilarous:</p>
+
+<p><div class="embed-responsive-container"><iframe src="http://player.vimeo.com/video/32447325 "></iframe></div></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[TDD != BDD]]></title>
+    <link href="http://gawyn.github.com/blog/2012/02/03/tdd-equals-bdd/"/>
+    <updated>2012-02-03T20:35:00+01:00</updated>
+    <id>http://gawyn.github.com/blog/2012/02/03/tdd-equals-bdd</id>
+    <content type="html"><![CDATA[<p>Talking with other developers, sometimes I notice a kind of confusion
+around the terms 'TDD' and 'BDD'. That was specially strange for me in the RuPy 2011,
+when I was still not very sure of the difference between those two
+software development techniques, and (at least for me) everyone used
+them indifferently.</p>
+
+<p>But they are not the same. In fact, BDD is an evolution, or an
+extension, of TDD. Let's try to define and point out the difference
+between them.</p>
+
+<h2>TDD (Test-Driven Development)</h2>
+
+<blockquote><p>All code is guilty until proven innocent.</p></blockquote>
+
+<p>In the university, we are taught that the main phases of the software are specification, design,
+ implementation and testing, in this order. In TDD, testing comes before implementation;
+ and thanks to some testing tools, it can be used as a kind of specification.</p>
+
+<p>In a TDD process, we develop first the test and then we work on the "real"
+ code until the test accepts it. In an advanced project, when we implement
+ a change into the code, we run all the tests, and not only the new one:
+ like this we can detect quickly if a new piece of code is causing
+ errors in old features.</p>
+
+<p><em>The TDD process:</em>
+<img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/tddSteps.jpg" title="TDD" alt="A diagram of TDD"></p>
+
+<h2>BDD (Behavior-Driven Development)</h2>
+
+<p>BDD is a business-like, natural language, user-approach to TDD. In it,
+we first define an acceptance test: we execute it and, obviously, it fails.
+Then we define a unit test: it fails too. Then, and only then, we can
+start with the code itself. When the given unit test passes, we execute
+again the acceptance test, and if it fails, we start the process all
+over again with a new unit test.</p>
+
+<p>Using Ruby speech, we could say that <strong>BDD wraps an acceptance test
+around a group of unit tests.</strong></p>
+
+<p><em>The BDD process:</em>
+<img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/atdd.jpg" title="TDD" alt="A diagram of TDD"></p>
+
+<p>In BDD we also try to make tests particularly readable, using tools like
+Rspec and Cucumber.</p>
+
+<h2>Conclusion</h2>
+
+<p>Even if it's an expansion, and a good one, BDD is not "better" than TDD.
+It's just different. In some cases, using BDD doesn't have sense.
+For example, in a gem or a plugin, to test the behavior of the user is
+just impossible.</p>
+
+<p>Actually, developers instinctively understand that: they just are confused
+by the similar names of B(bi)DD and T(ti)DD. You don't develop a gem using
+BDD, even if it sounds cool: it's TDD.</p>
+
+<p>PS: Another day we should talk if BDD and TDD are so useful or if it's
+only a hype.</p>
+]]></content>
+  </entry>
+  
+</feed>

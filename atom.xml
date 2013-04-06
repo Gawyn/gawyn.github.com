@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Cristian Planas]]></title>
+  <link href="http://gawyn.github.com/atom.xml" rel="self"/>
+  <link href="http://gawyn.github.com/"/>
+  <updated>2013-04-06T14:38:15+02:00</updated>
+  <id>http://gawyn.github.com/</id>
+  <author>
+    <name><![CDATA[Cristian Planas]]></name>
+    <email><![CDATA[me@cristianplanas.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Playfulbet wins an investment forum]]></title>
+    <link href="http://gawyn.github.com/blog/2013/03/10/playfulbet-wins-an-investment-forum/"/>
+    <updated>2013-03-10T07:11:00+01:00</updated>
+    <id>http://gawyn.github.com/blog/2013/03/10/playfulbet-wins-an-investment-forum</id>
+    <content type="html"><![CDATA[<p>Some weeks ago, my partner and me made a pitch at one of the most important investment forums in Spain, the First Tuesday. In it, we presented <a href="http://playfulbet.com">Playfulbet</a> to Business Angels and Venture Capital Funds. And it looks like that they liked our project, as <strong>the assistants chose us as the best project presented.</strong></p>
+
+<p><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/foroFT_feb-13_peq.png" title="Presenting Playfulbet to investors" alt="Pol and me presenting Playfulbet"></p>
+
+<p>Even if this victory doesn&#8217;t imply any investment, it obviously shows the potential of <a href="http://playfulbet.com">Playfulbet</a>. We thank all the First Tuesday attendants for trusting us.</p>
+
+<p>You can read more about it <a href="http://blog.firsttuesday.es/?p=1049">here</a> (in Spanish).</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[On Slideshare homepage]]></title>
+    <link href="http://gawyn.github.com/blog/2013/01/16/on-slideshare-cover/"/>
+    <updated>2013-01-16T20:17:00+01:00</updated>
+    <id>http://gawyn.github.com/blog/2013/01/16/on-slideshare-cover</id>
+    <content type="html"><![CDATA[<p><a href="http://gawyn.github.com/blog/2013/01/14/one-graph-to-rule-them-all/">In my last post</a>, I showed you <a href="http://www.slideshare.net/itnig/open-graphpresentation">One Graph to rule the all</a>, the presentation I made at <a href="http://itnig.net/en/events/one-graph-to-rule-them-all-how-to-integrate-your-application-with-facebook">Itnig&#8217;s Fridays</a> (a popular event in the start-up scene in Barcelona).</p>
+
+<p>This same presentation brought me a nice surprise today. It was featured in Slideshare homepage:</p>
+
+<p><a href="https://twitter.com/slideshare/status/291448965008855040"><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/one-graph-to-rule-them-all-slideshare.png" title="Presenting Playfulbet to investors" alt="Pol and me presenting Playfulbet"></a>
+<em>Sorry, I couldn&#8217;t take any screenshot of the actual Slideshare homepage.</em></p>
+
+<p>Mine was the first Itnig&#8217;s Fridays presentation featured in this popular site homepage. I hope this helps to extend the use of Open Graph!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[One Graph to rule them all]]></title>
+    <link href="http://gawyn.github.com/blog/2013/01/14/one-graph-to-rule-them-all/"/>
+    <updated>2013-01-14T23:39:00+01:00</updated>
+    <id>http://gawyn.github.com/blog/2013/01/14/one-graph-to-rule-them-all</id>
+    <content type="html"><![CDATA[<p>In <a href="http://playfulbet.com">Playfulbet</a>, we decided to use all the tools available to make ourselves viral since day one. And very soon we discovered that Facebook Open Graph was extremely valuable. Right now, this is giving us around <strong>600.000 prints and 5.000 clicks every month</strong>, totally for free. Also, given that the prints are triggered by users&#8217; actions, those numbers will increase with more users. So more users bring more Graph actions and more Graph actions bring more users. <strong>It&#8217;s a snowball effect: pure virality.</strong></p>
+
+<p>To explain this, and much more, I made the presentation <em>One Graph to rule them all: Integrating your application with Facebook</em> at <a href="http://itnig.net/en/events/one-graph-to-rule-them-all-how-to-integrate-your-application-with-facebook">Itnig&#8217;s Fridays</a>. In the presentation, I described all the process that a developer must follow to publish its application&#8217;s actions in the Open Graph: asking the right permission from the user, creating a page for every object that will be used in the actions and, finally, defining the action itself. I also talked about the most typical issues: the weird behaviour of Facebook&#8217;s cache and the unpredictable response of Facebook staff when they have to approve your action. I finished the presentation remarking what a great difference can this make in your application visibility.</p>
+
+<div class="embed-responsive-container"><iframe src="http://www.slideshare.net/slideshow/embed_code/15989065 "></iframe></div>
+
+
+<p>Usually all the Itnig&#8217;s Fridays talks are recorded, but this was lost because of some weird technical error. Anyway, if you have any doubts about the presentation or the Open Graph, you can tweet me at <a href="https://twitter.com/cristianplanas">@cristianplanas</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Playfulbet]]></title>
+    <link href="http://gawyn.github.com/blog/2012/12/10/playfulbet/"/>
+    <updated>2012-12-10T17:17:00+01:00</updated>
+    <id>http://gawyn.github.com/blog/2012/12/10/playfulbet</id>
+    <content type="html"><![CDATA[<p>Last month, after seven happy months working at <a href="http://itnig.net">Itnig</a>, I started a new professional challenge: from now, I am the CTO of <a href="http://playfulbet.com">Playfulbet</a>.</p>
+
+<p>Until now, I was Senior Ruby developer and Project Manager at Itnig: a start-up accelerator. There I worked as developer in projects like PharmaDating or the Instituto Maxilofacial website. But my main task was being the project manager (and lead developer) of Playfulbet. And I liked the project so much that I decided to dedicate myself entirely to it.</p>
+
+<p><a href="http://playfulbet.com"><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/playfulbet-with-characters.jpg" title="Playfulbet logo" alt="Playfulbet logo"></a></p>
+
+<p>So a big nominal change (from Ruby developer in one company to CTO in another), but smaller in fact: I am still the man behind Playfulbet. Maybe the real change is philosophical. Before I was a developer who happened to like the start-up environment; now I am also risking myself as an entrepreneur.</p>
+
+<p><a href="http://playfulbet.com"><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/pfb-en-cover.png" title="Playfulbet homepage" alt="Playfulbet homepage"></a></p>
+
+<p>¿And why I decided to risk myself? First of all, I think that Playfulbet is an extremely cool project with a bright future ahead. Playfulbet is a sports betting social game, a project that puts together two areas which are greatly growing: social gaming and gambling. Also it has some of the elements that attract me more to a project: big data (bets and users data) and a social aspect.</p>
+
+<p>Wish me luck!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A short history of Software Engineering]]></title>
+    <link href="http://gawyn.github.com/blog/2012/10/25/a-short-history-of-software-engineering/"/>
+    <updated>2012-10-25T18:31:00+02:00</updated>
+    <id>http://gawyn.github.com/blog/2012/10/25/a-short-history-of-software-engineering</id>
+    <content type="html"><![CDATA[<p><a href="http://gawyn.github.com/blog/2012/09/11/baruco-2012-review/">As I told you some posts ago</a>, I loved the talk that Paolo Perrota gave at BaRuCo: <em>A short history of Software Engineering</em>. In it, Paolo explained showed why we, the developers/IT guys/nerds/whatever are not engineers and why the idea of &#8220;software engineering&#8221; itself is wrong. Also he showed us why developers can&#8217;t be replaced completely, as so many thought they would be. As he tells in the speak, when the complexity is in the problem, you can&#8217;t avoid it in the solution, and you need someone to overcome it.</p>
+
+<p>Anyway it would be much better if the speaker explains himself:</p>
+
+<div class="embed-responsive-container"><iframe src="http://www.youtube.com/embed/9IPn5Gk_OiM "></iframe></div>
+
+
+<p>PD: And by the way, in the last BaRuCo I was able to talk with him and get his book signed.</p>
+
+<p><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/metaprogramming_ruby_signed.jpg" title="Metaprogramming Ruby signed" alt="Metaprogramming Ruby signed by its author"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Barcelona Facebook World Hack]]></title>
+    <link href="http://gawyn.github.com/blog/2012/09/20/barcelona-facebook-world-hack/"/>
+    <updated>2012-09-20T12:28:00+02:00</updated>
+    <id>http://gawyn.github.com/blog/2012/09/20/barcelona-facebook-world-hack</id>
+    <content type="html"><![CDATA[<p>Facebook organizes some events, the Facebook World Hacks, to evangelize developers with its newest features. Some days ago it was the turn of Barcelona, and I was able to assist.</p>
+
+<p>The day started with some talks, where some Facebook employees presented all the features of the Open Graph: that was pretty convenient, as I am developing right now the Graph integration of <a href="http://playfulbet.com">Playfulbet</a>.</p>
+
+<p>After the talks, the Hack itself started: all the developers there had to create teams and start building an application using the Graph. There was even some prizes for the best ones.</p>
+
+<p><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/fb-world-hack-barcelona.jpg" title="Activities in the Barcelona Facebook World Hack" alt="People played ping-pong in the Barcelona Facebook World Hack"></p>
+
+<p>Unfortunately, most of the assistants were PHP developers, so I decided to leave a bit earlier, without participating in the Hack. Sometimes I wish that Ruby was more mainstream!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[BaRuCo 2012 review]]></title>
+    <link href="http://gawyn.github.com/blog/2012/09/11/baruco-2012-review/"/>
+    <updated>2012-09-11T15:56:00+02:00</updated>
+    <id>http://gawyn.github.com/blog/2012/09/11/baruco-2012-review</id>
+    <content type="html"><![CDATA[<p>Last weekend I was able to assist to the <a href="http://www.baruco.org/">Barcelona Ruby Conference</a>, organized by our friends of <a href="http://www.codegram.com/">Codegram</a>. The list of speakers looked very promising and the event didn’t disappoint anyone.</p>
+
+<p>First of all it&#8217;s important to remark how amazing the organization was: all the attendants were really well treated. In the picture below, you can see the delicious breakfast that we were able to enjoy just before the first speakers started:</p>
+
+<p><a href="http://tweetmovies.net"><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/baruco_breakfast.jpg" title="Breakfast at BaRuCo" alt="A delicious breakfast for the BaRuCo attendants"></a></p>
+
+<p>But the main point in any conference is the quality of the talks, and BaRuCo speakers did a real good job: the quantity of the talks was small compared to other conferences, but most of them were really interesting. Some of them were slightly too technical for the audience who approaches for the first time the topic that is exposed, but most of them found the perfect middleground between depth and simplicity. However, there were some that stood out&#8230;</p>
+
+<ul>
+<li><p><strong>Bronze medal for&#8230;</strong>: <em>Programming workout</em> by Michal Taszycki. A description of how to get from beginner to master in any discipline, with some useful techniques for improving in any area. I really like this kind of talks with a broader, more humanistic scope.</p></li>
+<li><p><strong>Silver medal for&#8230;</strong>: <em>Micro-Service Architecture</em> by Fred George. I already praised in this blog <a href="http://gawyn.github.com/blog/2012/02/05/programmer-anarchy/">another awesome talk given by Mr. George</a>: he is a really gifted speaker. This time, he exposed how his company faced some difficult cases dividing the architecture in multiple applications, managing to reduce the complexity of the solution.</p></li>
+<li><p><strong>Gold medal for&#8230;</strong>: <em>Why Agile (A short history of software engineering, and other ideas that didn’t work)</em> by Paolo Perrotta: I was a big fan of Mr. Perrotta since I read Metaprogramming Ruby, a book which changed the way I understand developing; but now… fuck, everybody in the congress fell in love with him. He stole the show with a great and very funny talk about how the own concept of software engineering is a misunderstanding of our craft.</p></li>
+</ul>
+
+
+<p>Summarizing, looks like that Barcelona has a new you-can&#8217;t-miss-it event. We are already waiting for 2013 tickets.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[In a Vim Workshop]]></title>
+    <link href="http://gawyn.github.com/blog/2012/09/05/in-a-vim-workshop/"/>
+    <updated>2012-09-05T05:44:00+02:00</updated>
+    <id>http://gawyn.github.com/blog/2012/09/05/in-a-vim-workshop</id>
+    <content type="html"><![CDATA[<p>Long time without any update! I will try to be more perservering with my posts from now on.</p>
+
+<p>In the next weeks I will explain some of my new projects, describing some of the difficulties I had to face and how I solved them. Mainly, issues with the architecture of a social sport betting application and a gem that I developed for it. But this won’t be today.</p>
+
+<p>What I would like to explain today is how Drew Neil, the creator of <a href="http://vimcasts.org">Vimcasts</a> and author of <a href="http://pragprog.com/book/dnvim/practical-vim">Practical Vim</a> ran a Vim Masterclass at Itnig HQ, where I work. It was more than one month ago, but it was so cool that it is worth to write about it after so much time. :P</p>
+
+<p><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/drew_neil_and_me.jpg" title="Drew Neil and me" alt="With the creator of Vimcasts"></p>
+
+<p>Talking about the workshop, my impression was very positive. As always with Vim, I really feel that I am using only a very small part of its amazing features. The workshop proved me right (about my own lack of skill, but right): Vim is as flexible as you want it to be, and it gives you the possibility to -as Neil’s book tells- “edit text at the speed of thought”.</p>
+
+<p>PS: This weekend <a href="http://www.baruco.org/">Baruco</a> starts. I will be there, and I hope to tweet quite a lot about it. Follow <a href="https://twitter.com/cristianplanas">@cristianplanas</a> on Twitter!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The beauty of Ruby conditionals]]></title>
+    <link href="http://gawyn.github.com/blog/2012/02/16/the-beauty-of-ruby-conditionals/"/>
+    <updated>2012-02-16T01:15:00+01:00</updated>
+    <id>http://gawyn.github.com/blog/2012/02/16/the-beauty-of-ruby-conditionals</id>
+    <content type="html"><![CDATA[<p>Conditionals define the way in which a language specifies its logic. With
+this, they not only define the way you are going to code: they are also
+stating what you can do, and the way you are going to think and feel about your
+applications. As I said in other entries, imagination is essential for a
+good developer, and for having a free imagination, a simple and flexible
+language -with its simple and flexible conditionals- is absolutely
+required.</p>
+
+<p>In this, Ruby also stands out. Developers not only are able to use the
+usual if and else idioms, but count with some nice additions.</p>
+
+<ul>
+<li><strong>Improving negative conditions</strong></li>
+</ul>
+
+
+<p>In any kind of code, negative conditions are used quite often: and the
+<code>if not</code> idiom is not natural at all. Ruby provides of an specific idiom
+to state a negative condition: <code>unless</code>. For example, this:</p>
+
+<pre><code>if array.length != 1
+</code></pre>
+
+<p>looks much more nice like this:</p>
+
+<pre><code>unless array.length == 1
+</code></pre>
+
+<p>This also has its counterpart in loops, as until is the opposite of while.</p>
+
+<ul>
+<li><strong>Ruby is an easy-going guy</strong></li>
+</ul>
+
+
+<p>And thinks that most of the time people are saying the truth. So when
+Ruby evaluates a variable as a condition, everything except nil and
+false will be passed as true. That has some interesting effects:</p>
+
+<pre><code>if 0 puts 'C developers, 0 is true in Ruby!'
+</code></pre>
+
+<ul>
+<li><strong>Moving the condition to the end</strong></li>
+</ul>
+
+
+<p>Ruby always try to be as readable as possible, so it adds a new way to
+define a condition: leaving it after the actual code. For example,
+following the example given before:</p>
+
+<pre><code>puts 'C developers, 0 is true in Ruby!' if 0
+</code></pre>
+
+<ul>
+<li><strong>Conditions are executed in order</strong></li>
+</ul>
+
+
+<p>That&#8217;s a great help. For example, imagine we have this code:</p>
+
+<pre><code>puts "The length is 2" unless a.nil? || a.length == 2
+</code></pre>
+
+<p>In the case that a is nil, in other languages we would have an
+exception, as the nil element doesn&#8217;t have any method called length. But
+Ruby is smart enough to know that in an OR you don&#8217;t need to evaluate
+the other conditions if one is true.</p>
+
+<ul>
+<li><strong>The nil guard</strong></li>
+</ul>
+
+
+<p>When a Ruby beginners faces a piece of code, the most exotic idiom he
+can find will probably this: ||=. This is called the nil guard. It comes
+to save a typical problem: an assignation that only should be executed
+when the variable assigned is nil.</p>
+
+<pre><code>a ||= []
+</code></pre>
+
+<p>that&#8217;s much better than</p>
+
+<pre><code>a = [] if a.nil?
+</code></pre>
+
+<p>it&#8217;s just more elegant. As you can see, the nil guard is related with
+the executing the conditionals in order thing.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Presenting TweetMovies]]></title>
+    <link href="http://gawyn.github.com/blog/2012/02/08/presenting-tweetmovies/"/>
+    <updated>2012-02-08T22:37:00+01:00</updated>
+    <id>http://gawyn.github.com/blog/2012/02/08/presenting-tweetmovies</id>
+    <content type="html"><![CDATA[<p>When the Web is your passion, you don&#8217;t have enough with your job:
+you continue developing your own tools or applications after hours. Web
+developers like to have their own
+projects, creations they can feel they own. That&#8217;s exactly my case.</p>
+
+<p>One of those apps, probably my favorite, is
+<a href="http://tweetmovies.net">TweetMovies</a>: a
+special social network to discover great films and sharing your
+opinion about any of your favorite, or least favorite, movies. <strong>&#8220;Tweet.
+Read. Share. Discover cinema the social way!&#8221;</strong> is the motto of
+<a href="http://tweetmovies.net">TweetMovies</a>, and everything in the application, from the specification
+to the graphic design, is around that. In the end, we
+live in the 2.0 world!</p>
+
+<p><a href="http://tweetmovies.net"><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/project_tweetmovies.png" title="TweetMovies" alt="The cover of TweetMovies"></a></p>
+
+<p>In the creation of <a href="http://tweetmovies.net">TweetMovies</a>, integration with other social networks
+was truly important: users don&#8217;t need to register in TwM, as they can
+access the main features of the application only logging in with your
+Twitter account. <a href="http://tweetmovies.net">TweetMovies</a> also integrates with Facebook as any
+comment written on our application can be redirected to the Twitter and FB
+accounts of the users, giving you the power to share your views on
+movies with your friends and the world.</p>
+
+<p>One of the main goals of <a href="http://tweetmovies.net">TweetMovies</a> was to create a space where all the
+opinions around the film world could be organized. Twitter and the other
+social networks are fantastic jungles of information, an utopy for
+any datamining lover. But often it&#8217;s hard to find interesting and
+fair judgments about some topics: TwM tries to be a solution to that. The
+opinions of our users are ranked by other users and our own algorithm,
+giving them the chance to read first the most important ones. This way,
+TwM tries to be not only a social tool, but also a point of reference
+for anyone interested in movies. With
+<a href="http://tweetmovies.net">TweetMovies</a>, you will get a quick
+and attractive answer to the most typical questions: Should I watch
+this movie? Is it good? <strong>In TweetMovies we don&#8217;t believe that a number is
+enough, like other applications do. For us, words are more important than
+numbers: anyone trusts more a friend giving a reasonable opinion than other saying &#8216;six point three&#8217;.</strong></p>
+
+<p>Being a complex and modern application, in the creation of
+<a href="http://tweetmovies.net">TweetMovies</a>
+were used a great variety of tools. As a true Ruby believer, I used
+Rails in the application development. For the integration with FB and
+Twitter, Omniauth; for user authentication, Devise; and in the general
+design of the site, Slim, Sass, CoffeeScript and JQuery. Lots of other
+tools, mainly ruby gems, were used but it would be boring to talk about
+all of them.</p>
+
+<p>That&#8217;s all. I hope you try and enjoy
+<a href="http://tweetmovies.net">TweetMovies</a>. Because as Truffaut
+said, <em>Le Cinema Règne!</em></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Programmer Anarchy]]></title>
+    <link href="http://gawyn.github.com/blog/2012/02/05/programmer-anarchy/"/>
+    <updated>2012-02-05T13:10:00+01:00</updated>
+    <id>http://gawyn.github.com/blog/2012/02/05/programmer-anarchy</id>
+    <content type="html"><![CDATA[<p>In the <a href="http://rupy.eu/">Rupy 2011</a>, I assisted to some very interesting
+conferences, like the ones by <a href="https://twitter.com/#!/josevalim">José Valim</a> or <a href="https://twitter.com/#!/wycats">Yehuda Katz</a>.
+ But the conference I remember the most is, by far, Programmer Anarchy.</p>
+
+<p>In it, <a href="https://twitter.com/#!/fgeorge52">Fred George</a> exposes with a great amount of humor a development
+process where programmers are not just developing the application, but
+designing and modifying it beyond the customer&#8217;s expectations. He
+also reasons the need of removing certain roles (most of them, actually)
+that don&#8217;t produce code in the development process. As the popular agile (or antiagile?) manifesto says&#8230;
+<a href="http://programming-motherfucker.com/">Programming, Motherfucker!</a></p>
+
+<p>Personally, I have always thought that developers should take a more
+active role when discussing the application with the customer: how many
+times have we ended coding some feature that we knew for sure that was
+stupid? We have to remember that, in the end, we are fucking technology
+experts, specially compared to most of the clients (yeah, not being too
+humble now). We should be stakeholders, and not minor ones, of our own
+projects.</p>
+
+<p>Here you can watch the conference. I would recommend it, even if you are
+not very interested in the topic. If you know the IT world, it&#8217;s really
+hilarous:</p>
+
+<div class="embed-responsive-container"><iframe src="http://player.vimeo.com/video/32447325 "></iframe></div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[TDD != BDD]]></title>
+    <link href="http://gawyn.github.com/blog/2012/02/03/tdd-equals-bdd/"/>
+    <updated>2012-02-03T20:35:00+01:00</updated>
+    <id>http://gawyn.github.com/blog/2012/02/03/tdd-equals-bdd</id>
+    <content type="html"><![CDATA[<p>Talking with other developers, sometimes I notice a kind of confusion
+around the terms &#8216;TDD&#8217; and &#8216;BDD&#8217;. That was specially strange for me in the RuPy 2011,
+when I was still not very sure of the difference between those two
+software development techniques, and (at least for me) everyone used
+them indifferently.</p>
+
+<p>But they are not the same. In fact, BDD is an evolution, or an
+extension, of TDD. Let&#8217;s try to define and point out the difference
+between them.</p>
+
+<h2>TDD (Test-Driven Development)</h2>
+
+<blockquote><p>All code is guilty until proven innocent.</p></blockquote>
+
+<p>In the university, we are taught that the main phases of the software are specification, design,
+ implementation and testing, in this order. In TDD, testing comes before implementation;
+ and thanks to some testing tools, it can be used as a kind of specification.</p>
+
+<p>In a TDD process, we develop first the test and then we work on the &#8220;real&#8221;
+ code until the test accepts it. In an advanced project, when we implement
+ a change into the code, we run all the tests, and not only the new one:
+ like this we can detect quickly if a new piece of code is causing
+ errors in old features.</p>
+
+<p><em>The TDD process:</em>
+<img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/tddSteps.jpg" title="TDD" alt="A diagram of TDD"></p>
+
+<h2>BDD (Behavior-Driven Development)</h2>
+
+<p>BDD is a business-like, natural language, user-approach to TDD. In it,
+we first define an acceptance test: we execute it and, obviously, it fails.
+Then we define a unit test: it fails too. Then, and only then, we can
+start with the code itself. When the given unit test passes, we execute
+again the acceptance test, and if it fails, we start the process all
+over again with a new unit test.</p>
+
+<p>Using Ruby speech, we could say that <strong>BDD wraps an acceptance test
+around a group of unit tests.</strong></p>
+
+<p><em>The BDD process:</em>
+<img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/atdd.jpg" title="TDD" alt="A diagram of TDD"></p>
+
+<p>In BDD we also try to make tests particularly readable, using tools like
+Rspec and Cucumber.</p>
+
+<h2>Conclusion</h2>
+
+<p>Even if it&#8217;s an expansion, and a good one, BDD is not &#8220;better&#8221; than TDD.
+It&#8217;s just different. In some cases, using BDD doesn&#8217;t have sense.
+For example, in a gem or a plugin, to test the behavior of the user is
+just impossible.</p>
+
+<p>Actually, developers instinctively understand that: they just are confused
+by the similar names of B(bi)DD and T(ti)DD. You don&#8217;t develop a gem using
+BDD, even if it sounds cool: it&#8217;s TDD.</p>
+
+<p>PS: Another day we should talk if BDD and TDD are so useful or if it&#8217;s
+only a hype.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Big models, small controllers]]></title>
+    <link href="http://gawyn.github.com/blog/2012/02/01/big-models/"/>
+    <updated>2012-02-01T11:04:00+01:00</updated>
+    <id>http://gawyn.github.com/blog/2012/02/01/big-models</id>
+    <content type="html"><![CDATA[<p>OK, yeah, the title of this entry is one of the most common and repeated
+sentences about Rails (and MVC in general) development. But there is
+something else: <strong>it&#8217;s a big, big, truth</strong>.</p>
+
+<p>Being myself quite an eccentric developer, a lot of times I
+started in a language without caring about this kind of advises. OK, I
+follow most of the typical patterns -trying to maintain a scalable,
+blablabla code- but nothing very specific, certainly nothing that cares
+particularly about MVC.</p>
+
+<p>So when I started to develop my first Rails project, <a href="http://www.fundidoanegro.net">Fundido a Negro</a>
+, I gave a shit about maintaining
+small controllers and did as most Rails beginners do: creating
+grotesquely giant controllers. After some months, that made the code
+almost impossible to understand, and even if I could have continued with
+it, it was boring and confusing. So I stopped the project in a &#8220;more or
+less OK&#8221; phase and started with something else.</p>
+
+<p>After some months and experiences, I naturally understood what every
+Rails guru (and most of developers) say: a big controller is a terrible
+pain in the ass. But why a big model is (much) better than a big
+controller? I don&#8217;t really know the correct reason; I only can adventure
+a few hypothesis that, I think, tell a lot about MVC.</p>
+
+<ul>
+<li><p><strong>What the fuck is a controller?</strong>. Of the three elements in the
+MVC, we can easily identify the first one with &#8220;real&#8221; objects (as in
+object-oriented); the views are, like in the famous tale, the only part
+of the real world (more like the data world) that users can see; they
+care about the relationship between the user and the models. So far,
+it&#8217;s OK. But what are controllers? Only the middlemen, the border
+policemen between the world of the data/objects/models and the view
+country where users live.</p></li>
+<li><p><strong>Code in the model is easier to reuse and harder to duplicate</strong>. Imagine
+that in a given action, you need the first n objects which its relation
+x applies to a certain condition. If you write that method in the model you
+can reuse it any other time, or even define it as a scope and
+save you an awful lot of code. Giving access to every action of every controller to
+that method will save you from the dangers of duplication, and also will
+make you more conscious of the tools you already have created, as the
+models tends to be in the center.</p></li>
+<li><p><strong>A big model is good for your imagination</strong>. When you have available
+methods that deal with the data in your application in multiple
+different ways, it&#8217;s easier for you to think about new features.</p></li>
+</ul>
+
+
+<p>Right now, I already feel like I&#8217;m repeating the obvious, but
+I will show you another example. Those two pieces of code to the same:</p>
+
+<p>Big controller style:</p>
+
+<pre><code>def index_by_trending
+  @premieretweets = Movie.with_tweet.inject([]) do |res,movie|
+    res &lt;&lt; movie.tweets.by_score[0]
+  end
+end
+</code></pre>
+
+<p>Small controller style:</p>
+
+<pre><code>def index_by_trending
+  @premieretweets = Tweet.index_trending
+end
+
+(In the model)
+def self.index_trending
+  tweets = Movie.with_tweet.inject([]) do |res,movie|
+    res &lt;&lt; movie.tweets.by_score[0]
+  end
+end
+</code></pre>
+
+<p>OK. Now let&#8217;s imagine we create another action in the same controller,
+one that needs only the first 5 elements:</p>
+
+<p>Big controller style:</p>
+
+<pre><code>def short_index_by_trending
+  @premieretweets = Movie.with_tweet[0..5].inject([]) do |res,movie|
+    res &lt;&lt; movie.tweets.by_score[0]
+  end
+end
+</code></pre>
+
+<p>Small controller style:</p>
+
+<pre><code>def short_index_by_trending
+  @premieretweets = Tweet.index_trending[0..5]
+end
+</code></pre>
+
+<p>In the end, you are reusing and not repeating code with the &#8220;small
+controller style&#8221; solution and well, it also looks much tidier.</p>
+
+<p>Those are some of the reasons why I really appreciate initiatives like
+inherit_resources, even if I don&#8217;t really use it so often (shame on me).</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why do I love method_missing]]></title>
+    <link href="http://gawyn.github.com/blog/2012/01/29/why-do-i-love-method-missing/"/>
+    <updated>2012-01-29T17:27:00+01:00</updated>
+    <id>http://gawyn.github.com/blog/2012/01/29/why-do-i-love-method-missing</id>
+    <content type="html"><![CDATA[<p>Every Ruby developer has some tricks that he loves. Sometimes it&#8217;s not even necessary to use them a lot: it&#8217;s enough if you like them only in a philosophical or aesthetical way. When you talk about Ruby to a newcomer, the first thing you do is to give an enthusiastic description about that technique, your favourite one. And for me, I guess it&#8217;s <code>method_missing</code>.</p>
+
+<h2>What is <code>method_missing</code>?</h2>
+
+<p>I discovered method_missing in a great Ruby book: <em>Metaprogramming Ruby</em> by Paolo Perrotta. Originally, <em>method_missing</em> is a function that is only called when Ruby can&#8217;t find a given method into an object. If the object is the last in the jerarchy (in 1.9, BasicObject), <code>method_missing</code> raises an error; if not, it calls the same method in the inmediate superior object in the jerarchy.</p>
+
+<h2>Oh, a method to raise an error. And why should I care?</h2>
+
+<p>Because remember, in Ruby you can redefine methods as you like. With that feature, <code>method_missing</code> becomes the ultimate hook: you can intercept literally every action (that doesn&#8217;t have a method defined yet)) and treat it as you wish. For example, let&#8217;s make that everytime we call <code>write_{#something}</code>, Ruby writes it:</p>
+
+<pre><code>def method_missing(method, *args)
+  method_name = method.to_s
+  if method_name.start_with?('write_')
+    puts method_name[6..-1]
+  else puts 'This method does not exist here'
+  end
+end
+</code></pre>
+
+<h2>That sounds like quite weird (and useless) stuff&#8230;</h2>
+
+<p>Maybe, but it&#8217;s in the core of some of Ruby most popular gems, like (guess) Rails. Have your ever thought how some ActiveRecords methods like <code>find_by_#{attribute}</code> work? You are right, thanks to <code>method_missing</code>.</p>
+
+<p>Actually, ActiveRecords combines <code>method_missing</code> with another great metaprogramming technique: dynamic methods. The first time you call a reader or writer method in an object of a given class, those methods are not still defined: then <code>method_missing</code> appears, defining the actions for each of the table columns. Clever, elegant and really, really useful.</p>
+
+<h2>Whoa, now it sounds cool. Which are its flaws?</h2>
+
+<p>It doesn&#8217;t sound cool, <strong>it is cool</strong>. But OK, it has some flaws. As with some other metaprogramming techniques, one is tempted to use them constantly, even when there isn&#8217;t any reason to use it over dynamic methods or even normal vanilla methods. And those are much better in terms of cost.</p>
+
+<p>Another big flaw: it&#8217;s hard as hell to debug. In the end, we are &#8220;hacking&#8221; an error method, and one of the most basic ones.</p>
+
+<h2>OK, now I see the pros and the cons. But why do you like it so much?</h2>
+
+<p>As I told in the beginning, it&#8217;s a philosophical matter. <code>method_missing</code> ilustrates perfectly those famous words by Matz:</p>
+
+<blockquote><p>Ruby trusts you. Ruby treats you as a grown-up programmer. It gives you great power such as meta-programming. But you need to remember that with great power comes great responsibility.</p></blockquote>
+
+<p>To be able to wait in the backdoor for those treacherous method calls and giving them a good beating -I mean, dealing with them- it really changed my concept of software development. And I guess that is why I like <code>method_missing</code>. Exactly the same reason that makes me love Ruby.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Welcome to my new blog!]]></title>
+    <link href="http://gawyn.github.com/blog/2012/01/29/welcome-to-my-new-blog/"/>
+    <updated>2012-01-29T03:44:00+01:00</updated>
+    <id>http://gawyn.github.com/blog/2012/01/29/welcome-to-my-new-blog</id>
+    <content type="html"><![CDATA[<p>Being at the same time an IT guy and a literature lover, I guess it&#8217;s normal I created a lot of blogs in my life: <a href="http://gawyn.blogspot.com/">El blog de Gawyn</a>, <a href="http://librosyfilms.wordpress.com/">Libros y Films</a>, and specially <a href="http://cafemarat.blogspot.com/">Café Marat</a> a blog with 73 (long) entries written in almost two years and that even after not being updated for more then three years, is still receiving almost 1.000 visits every month. I also created a cinema magazine, <a href="http://fundidoanegro.net">Fundido a Negro</a> that was also my first experience with Rails.</p>
+
+<p>But, so far, this blogs were essencially about some of my other passions: literature and cinema. <strong>This blog will be different: it&#8217;s main topic will be my experiences with Ruby and other languages.</strong> Of course, I know that it&#8217;s always risky to predict the real content of something before creating it, but at least that is my purpose.</p>
+
+<p>But why should a developer write about his job? First of all, to share the new lessons one takes everyday with other developers; right now, for any of us, it&#8217;s impossible to think about how it would be our coding without the help of the community via Google, blogs or <a href="http://stackoverflow.com/">Stackoverflow</a>. But also because, quoting Einstein:</p>
+
+<blockquote><p>If you can&#8217;t explain it simply, you don&#8217;t understand it well enough.</p></blockquote>
+
+<p>And that&#8217;s enough for this entry. Let the real action begin!</p>
+]]></content>
+  </entry>
+  
+</feed>

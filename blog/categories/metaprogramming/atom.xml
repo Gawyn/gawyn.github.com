@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: metaprogramming | Cristian Planas]]></title>
+  <link href="http://gawyn.github.com/blog/categories/metaprogramming/atom.xml" rel="self"/>
+  <link href="http://gawyn.github.com/"/>
+  <updated>2013-04-06T14:38:15+02:00</updated>
+  <id>http://gawyn.github.com/</id>
+  <author>
+    <name><![CDATA[Cristian Planas]]></name>
+    <email><![CDATA[me@cristianplanas.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Why do I love method_missing]]></title>
+    <link href="http://gawyn.github.com/blog/2012/01/29/why-do-i-love-method-missing/"/>
+    <updated>2012-01-29T17:27:00+01:00</updated>
+    <id>http://gawyn.github.com/blog/2012/01/29/why-do-i-love-method-missing</id>
+    <content type="html"><![CDATA[<p>Every Ruby developer has some tricks that he loves. Sometimes it's not even necessary to use them a lot: it's enough if you like them only in a philosophical or aesthetical way. When you talk about Ruby to a newcomer, the first thing you do is to give an enthusiastic description about that technique, your favourite one. And for me, I guess it's <code>method_missing</code>.</p>
+
+<h2>What is <code>method_missing</code>?</h2>
+
+<p>I discovered method_missing in a great Ruby book: <em>Metaprogramming Ruby</em> by Paolo Perrotta. Originally, <em>method_missing</em> is a function that is only called when Ruby can't find a given method into an object. If the object is the last in the jerarchy (in 1.9, BasicObject), <code>method_missing</code> raises an error; if not, it calls the same method in the inmediate superior object in the jerarchy.</p>
+
+<h2>Oh, a method to raise an error. And why should I care?</h2>
+
+<p>Because remember, in Ruby you can redefine methods as you like. With that feature, <code>method_missing</code> becomes the ultimate hook: you can intercept literally every action (that doesn't have a method defined yet)) and treat it as you wish. For example, let's make that everytime we call <code>write_{#something}</code>, Ruby writes it:</p>
+
+<pre><code>def method_missing(method, *args)
+  method_name = method.to_s
+  if method_name.start_with?('write_')
+    puts method_name[6..-1]
+  else puts 'This method does not exist here'
+  end
+end
+</code></pre>
+
+<h2>That sounds like quite weird (and useless) stuff...</h2>
+
+<p>Maybe, but it's in the core of some of Ruby most popular gems, like (guess) Rails. Have your ever thought how some ActiveRecords methods like <code>find_by_#{attribute}</code> work? You are right, thanks to <code>method_missing</code>.</p>
+
+<p>Actually, ActiveRecords combines <code>method_missing</code> with another great metaprogramming technique: dynamic methods. The first time you call a reader or writer method in an object of a given class, those methods are not still defined: then <code>method_missing</code> appears, defining the actions for each of the table columns. Clever, elegant and really, really useful.</p>
+
+<h2>Whoa, now it sounds cool. Which are its flaws?</h2>
+
+<p>It doesn't sound cool, <strong>it is cool</strong>. But OK, it has some flaws. As with some other metaprogramming techniques, one is tempted to use them constantly, even when there isn't any reason to use it over dynamic methods or even normal vanilla methods. And those are much better in terms of cost.</p>
+
+<p>Another big flaw: it's hard as hell to debug. In the end, we are "hacking" an error method, and one of the most basic ones.</p>
+
+<h2>OK, now I see the pros and the cons. But why do you like it so much?</h2>
+
+<p>As I told in the beginning, it's a philosophical matter. <code>method_missing</code> ilustrates perfectly those famous words by Matz:</p>
+
+<blockquote><p>Ruby trusts you. Ruby treats you as a grown-up programmer. It gives you great power such as meta-programming. But you need to remember that with great power comes great responsibility.</p></blockquote>
+
+<p>To be able to wait in the backdoor for those treacherous method calls and giving them a good beating -I mean, dealing with them- it really changed my concept of software development. And I guess that is why I like <code>method_missing</code>. Exactly the same reason that makes me love Ruby.</p>
+]]></content>
+  </entry>
+  
+</feed>
