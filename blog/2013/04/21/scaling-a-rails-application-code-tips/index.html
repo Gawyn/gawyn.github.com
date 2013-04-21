@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Presenting TweetMovies - Cristian Planas</title>
+  <title>Scaling a Rails application: code tips - Cristian Planas</title>
   <meta name="author" content="Cristian Planas">
 
   
-  <meta name="description" content="When the Web is your passion, you don&#8217;t have enough with your job:
-you continue developing your own tools or applications after hours. Web &hellip;">
+  <meta name="description" content="Rails is simple. Rails is beautiful. Rails is magical. But when the amount of users starts to grow, it&#8217;s time to go back to the basics and &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ you continue developing your own tools or applications after hours. Web &hellip;
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://Gawyn.github.com/blog/2012/02/08/presenting-tweetmovies">
+  <link rel="canonical" href="http://Gawyn.github.com/blog/2013/04/21/scaling-a-rails-application-code-tips">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Cristian Planas" type="application/atom+xml">
@@ -81,7 +80,7 @@ you continue developing your own tools or applications after hours. Web &hellip;
   
   <header>
     
-      <h1 class="entry-title">Presenting TweetMovies</h1>
+      <h1 class="entry-title">Scaling a Rails Application: Code Tips</h1>
     
     
       <p class="meta">
@@ -97,64 +96,84 @@ you continue developing your own tools or applications after hours. Web &hellip;
   
 
 
-<time datetime="2012-02-08T22:37:00+01:00" pubdate data-updated="true">Feb 8<span>th</span>, 2012</time>
+<time datetime="2013-04-21T22:40:00+02:00" pubdate data-updated="true">Apr 21<span>st</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>When the Web is your passion, you don&#8217;t have enough with your job:
-you continue developing your own tools or applications after hours. Web
-developers like to have their own
-projects, creations they can feel they own. That&#8217;s exactly my case.</p>
+<div class="entry-content"><p>Rails is simple. Rails is beautiful. Rails is magical. But when the amount of users starts to grow, it&#8217;s time to go back to the basics and refactor your code to improve the performance.</p>
 
-<p>One of those apps, probably my favorite, is
-<a href="http://tweetmovies.net">TweetMovies</a>: a
-special social network to discover great films and sharing your
-opinion about any of your favorite, or least favorite, movies. <strong>&#8220;Tweet.
-Read. Share. Discover cinema the social way!&#8221;</strong> is the motto of
-<a href="http://tweetmovies.net">TweetMovies</a>, and everything in the application, from the specification
-to the graphic design, is around that. In the end, we
-live in the 2.0 world!</p>
+<p>This article is NOT about architecture (you can read a great article about that <a href="http://highscalability.com/blog/2013/4/15/scaling-pinterest-from-0-to-10s-of-billions-of-page-views-a.html">here</a>. This article is about some very basic tips and tools that all Rails developers should use when trying to improve their application performance. Things like:</p>
 
-<p><a href="http://tweetmovies.net"><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/project_tweetmovies.png" title="TweetMovies" alt="The cover of TweetMovies"></a></p>
+<ul>
+<li><strong>Caching</strong>: Rails provides three different kinds of caching: page, action and fragment caching. Page and action caching do basically the same: cache all the action. The main difference is that action caching gets to the Rails stack and it processes the controller <code>before_filter</code> hooks. This is mandatory if you are using authentication, for example.</li>
+</ul>
 
-<p>In the creation of <a href="http://tweetmovies.net">TweetMovies</a>, integration with other social networks
-was truly important: users don&#8217;t need to register in TwM, as they can
-access the main features of the application only logging in with your
-Twitter account. <a href="http://tweetmovies.net">TweetMovies</a> also integrates with Facebook as any
-comment written on our application can be redirected to the Twitter and FB
-accounts of the users, giving you the power to share your views on
-movies with your friends and the world.</p>
 
-<p>One of the main goals of <a href="http://tweetmovies.net">TweetMovies</a> was to create a space where all the
-opinions around the film world could be organized. Twitter and the other
-social networks are fantastic jungles of information, an utopy for
-any datamining lover. But often it&#8217;s hard to find interesting and
-fair judgments about some topics: TwM tries to be a solution to that. The
-opinions of our users are ranked by other users and our own algorithm,
-giving them the chance to read first the most important ones. This way,
-TwM tries to be not only a social tool, but also a point of reference
-for anyone interested in movies. With
-<a href="http://tweetmovies.net">TweetMovies</a>, you will get a quick
-and attractive answer to the most typical questions: Should I watch
-this movie? Is it good? <strong>In TweetMovies we don&#8217;t believe that a number is
-enough, like other applications do. For us, words are more important than
-numbers: anyone trusts more a friend giving a reasonable opinion than other saying &#8216;six point three&#8217;.</strong></p>
+<p>Anyway, action and page caching are deprecated in Rails 4. The real thing here is fragment caching: to cache any part of a process, including part of view rendering. This is specially useful in expensive calculations that don&#8217;t change in a long time, like periodical statistics. In Playfulbet, I cache using memcached and <a href="https://github.com/mperham/dalli">dalli</a>.</p>
 
-<p>Being a complex and modern application, in the creation of
-<a href="http://tweetmovies.net">TweetMovies</a>
-were used a great variety of tools. As a true Ruby believer, I used
-Rails in the application development. For the integration with FB and
-Twitter, Omniauth; for user authentication, Devise; and in the general
-design of the site, Slim, Sass, CoffeeScript and JQuery. Lots of other
-tools, mainly ruby gems, were used but it would be boring to talk about
-all of them.</p>
+<p>For a better understanding of Rails caching, I would recommend to read the episode Obie Fernandez wrote about it in <a href="http://www.amazon.com/Rails-Way-Addison-Wesley-Professional-Ruby/dp/0321601661">The Rails 3 Way</a>. <a href="http://guides.rubyonrails.org/caching_with_rails.html">Rails documentation</a> is fine, too.</p>
 
-<p>That&#8217;s all. I hope you try and enjoy
-<a href="http://tweetmovies.net">TweetMovies</a>. Because as Truffaut
-said, <em>Le Cinema Règne!</em></p>
+<ul>
+<li><strong>Eager loading</strong>: Eager loading is a way to fetch all the associated objects with a single DB query.</li>
+</ul>
+
+
+<p>An example:</p>
+
+<pre><code>user.bets.map { |bet| bet.option.odds }
+</code></pre>
+
+<p>This code will result in 1 + n calls to the DB, where n is the number of bets that the user has.</p>
+
+<pre><code>user.bets.includes(:option).map { |bet| bet.option.odds }
+</code></pre>
+
+<p>This code will result in 2 calls to the DB.</p>
+
+<p>You also can include a deep hierarchy of associations using a hash: <code>user.bets.includes(:option =&gt; {:market =&gt; :event})</code>. Eager loading also accepts a <code>:conditions</code> option.</p>
+
+<p>There is another issue with eager loading: that it is not lazy. That means that the query will get executed in the controller, not in the view: and that could lead to unnecessary queries (for example, if part of the view is cached).</p>
+
+<p>You can learn more about it in this <a href="http://railscasts.com/episodes/22-eager-loading?view=asciicast">Railscast episode</a>.</p>
+
+<ul>
+<li><strong>Materialize</strong>: If you need to materialize attributes, just do it. As a rule of thumb, accessing the DB is &#8220;cheaper&#8221; than processing in Ruby (it&#8217;s a general rule, there are plenty of exceptions). Reading an attribute is better than calling a method that calculates it. Pretty obvious, no?</li>
+</ul>
+
+
+<p>The &#8220;materialize&#8221; rule has another meaning: to avoid recurring queries materializing the value in a column. A basic example of this philosophy is counter-cache, a DB column automatically updated by Rails that saves the total amount of a multiple association. Like this, it completely removes the burden of a recurring <code>SELECT COUNT(*)</code>.</p>
+
+<p>There is a third meaning: to materialize in a model an attribute of another model that the former is using recurringly. You need to be EXTRA cautious about that -somehow it&#8217;s a violation of basic OOP principles- and only use it when it will make a big difference in performance. For example, when there are many classes between the accessor and the accessed.</p>
+
+<ul>
+<li><strong>Use <code>pluck</code></strong>: If you are using queries that return a large amount of records, that&#8217;s a big burden for your server&#8217;s memory. That&#8217;s specially not optimal if you only need a single column of the record.</li>
+</ul>
+
+
+<p><code>pluck</code>, a method added to Rails in 3.2, solves that problem. Essentially, it selects a single column in your SQL query. I will give you a real example from Playfulbet code. In the first case, we make a <code>Bet</code> query loading thousands of <code>User</code> objects, which are quite heavy:</p>
+
+<pre><code>user_ids = User.where("created_at &lt; ?", Time.now.beginning_of_month).map(&amp;:id)
+Bet.where(:user_id =&gt; user_ids)
+</code></pre>
+
+<p>On the other hand, this loads only an array of integers for making the same query:</p>
+
+<pre><code>user_ids = User.where("created_at &lt; ?", Time.now.beginning_of_month).pluck(:id)
+Bet.where(:user_id =&gt; user_ids)
+</code></pre>
+
+<ul>
+<li><strong>Learn how your 3rd party code works</strong>: In this case, prevention is better than cure: choose very carefully your gems. Go for those who have a full test suite and GitHub activity. And even those have to be learnt, as the use you are doing of them can be optimized for your own purposes.</li>
+</ul>
+
+
+<p>A simple example: the very popular <code>will_paginate</code> performs a <code>SELECT COUNT</code> query to calculate the number of pages. This query can be avoided if you materialize its result and pass it directly to the paginate method in the <code>:total_entries</code> option. In this case, I paginate the bets of a user without querying the total amount and using counter-cache:</p>
+
+<pre><code>@bets = @user.bets.paginate(:page =&gt; params[:page], :total_entries =&gt; @user.bets_count)
+</code></pre>
 </div>
 
 
@@ -177,12 +196,12 @@ said, <em>Le Cinema Règne!</em></p>
   
 
 
-<time datetime="2012-02-08T22:37:00+01:00" pubdate data-updated="true">Feb 8<span>th</span>, 2012</time>
+<time datetime="2013-04-21T22:40:00+02:00" pubdate data-updated="true">Apr 21<span>st</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/personal/'>personal</a>, <a class='category' href='/blog/categories/projects/'>projects</a>, <a class='category' href='/blog/categories/tweetmovies/'>tweetmovies</a>
+    <a class='category' href='/blog/categories/rails/'>rails</a>, <a class='category' href='/blog/categories/scaling/'>scaling</a>
   
 </span>
 
@@ -191,7 +210,7 @@ said, <em>Le Cinema Règne!</em></p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://Gawyn.github.com/blog/2012/02/08/presenting-tweetmovies/" data-via="cristianplanas" data-counturl="http://Gawyn.github.com/blog/2012/02/08/presenting-tweetmovies/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://Gawyn.github.com/blog/2013/04/21/scaling-a-rails-application-code-tips/" data-via="cristianplanas" data-counturl="http://Gawyn.github.com/blog/2013/04/21/scaling-a-rails-application-code-tips/" >Tweet</a>
   
   
   
@@ -200,10 +219,8 @@ said, <em>Le Cinema Règne!</em></p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/02/05/programmer-anarchy/" title="Previous Post: Programmer Anarchy">&laquo; Programmer Anarchy</a>
+        <a class="basic-alignment left" href="/blog/2013/03/10/playfulbet-wins-an-investment-forum/" title="Previous Post: Playfulbet wins an investment forum">&laquo; Playfulbet wins an investment forum</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/02/16/the-beauty-of-ruby-conditionals/" title="Next Post: The beauty of Ruby conditionals">The beauty of Ruby conditionals &raquo;</a>
       
     </p>
   </footer>
@@ -365,8 +382,8 @@ said, <em>Le Cinema Règne!</em></p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://Gawyn.github.com/blog/2012/02/08/presenting-tweetmovies/';
-        var disqus_url = 'http://Gawyn.github.com/blog/2012/02/08/presenting-tweetmovies/';
+        var disqus_identifier = 'http://Gawyn.github.com/blog/2013/04/21/scaling-a-rails-application-code-tips/';
+        var disqus_url = 'http://Gawyn.github.com/blog/2013/04/21/scaling-a-rails-application-code-tips/';
         var disqus_script = 'embed.js';
       
     (function () {

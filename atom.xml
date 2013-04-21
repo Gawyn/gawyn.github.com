@@ -4,7 +4,7 @@
   <title><![CDATA[Cristian Planas]]></title>
   <link href="http://Gawyn.github.com/atom.xml" rel="self"/>
   <link href="http://Gawyn.github.com/"/>
-  <updated>2013-04-21T22:53:40+02:00</updated>
+  <updated>2013-04-21T22:54:54+02:00</updated>
   <id>http://Gawyn.github.com/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
@@ -12,6 +12,85 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Scaling a Rails application: code tips]]></title>
+    <link href="http://Gawyn.github.com/blog/2013/04/21/scaling-a-rails-application-code-tips/"/>
+    <updated>2013-04-21T22:40:00+02:00</updated>
+    <id>http://Gawyn.github.com/blog/2013/04/21/scaling-a-rails-application-code-tips</id>
+    <content type="html"><![CDATA[<p>Rails is simple. Rails is beautiful. Rails is magical. But when the amount of users starts to grow, it&#8217;s time to go back to the basics and refactor your code to improve the performance.</p>
+
+<p>This article is NOT about architecture (you can read a great article about that <a href="http://highscalability.com/blog/2013/4/15/scaling-pinterest-from-0-to-10s-of-billions-of-page-views-a.html">here</a>. This article is about some very basic tips and tools that all Rails developers should use when trying to improve their application performance. Things like:</p>
+
+<ul>
+<li><strong>Caching</strong>: Rails provides three different kinds of caching: page, action and fragment caching. Page and action caching do basically the same: cache all the action. The main difference is that action caching gets to the Rails stack and it processes the controller <code>before_filter</code> hooks. This is mandatory if you are using authentication, for example.</li>
+</ul>
+
+
+<p>Anyway, action and page caching are deprecated in Rails 4. The real thing here is fragment caching: to cache any part of a process, including part of view rendering. This is specially useful in expensive calculations that don&#8217;t change in a long time, like periodical statistics. In Playfulbet, I cache using memcached and <a href="https://github.com/mperham/dalli">dalli</a>.</p>
+
+<p>For a better understanding of Rails caching, I would recommend to read the episode Obie Fernandez wrote about it in <a href="http://www.amazon.com/Rails-Way-Addison-Wesley-Professional-Ruby/dp/0321601661">The Rails 3 Way</a>. <a href="http://guides.rubyonrails.org/caching_with_rails.html">Rails documentation</a> is fine, too.</p>
+
+<ul>
+<li><strong>Eager loading</strong>: Eager loading is a way to fetch all the associated objects with a single DB query.</li>
+</ul>
+
+
+<p>An example:</p>
+
+<pre><code>user.bets.map { |bet| bet.option.odds }
+</code></pre>
+
+<p>This code will result in 1 + n calls to the DB, where n is the number of bets that the user has.</p>
+
+<pre><code>user.bets.includes(:option).map { |bet| bet.option.odds }
+</code></pre>
+
+<p>This code will result in 2 calls to the DB.</p>
+
+<p>You also can include a deep hierarchy of associations using a hash: <code>user.bets.includes(:option =&gt; {:market =&gt; :event})</code>. Eager loading also accepts a <code>:conditions</code> option.</p>
+
+<p>There is another issue with eager loading: that it is not lazy. That means that the query will get executed in the controller, not in the view: and that could lead to unnecessary queries (for example, if part of the view is cached).</p>
+
+<p>You can learn more about it in this <a href="http://railscasts.com/episodes/22-eager-loading?view=asciicast">Railscast episode</a>.</p>
+
+<ul>
+<li><strong>Materialize</strong>: If you need to materialize attributes, just do it. As a rule of thumb, accessing the DB is &#8220;cheaper&#8221; than processing in Ruby (it&#8217;s a general rule, there are plenty of exceptions). Reading an attribute is better than calling a method that calculates it. Pretty obvious, no?</li>
+</ul>
+
+
+<p>The &#8220;materialize&#8221; rule has another meaning: to avoid recurring queries materializing the value in a column. A basic example of this philosophy is counter-cache, a DB column automatically updated by Rails that saves the total amount of a multiple association. Like this, it completely removes the burden of a recurring <code>SELECT COUNT(*)</code>.</p>
+
+<p>There is a third meaning: to materialize in a model an attribute of another model that the former is using recurringly. You need to be EXTRA cautious about that -somehow it&#8217;s a violation of basic OOP principles- and only use it when it will make a big difference in performance. For example, when there are many classes between the accessor and the accessed.</p>
+
+<ul>
+<li><strong>Use <code>pluck</code></strong>: If you are using queries that return a large amount of records, that&#8217;s a big burden for your server&#8217;s memory. That&#8217;s specially not optimal if you only need a single column of the record.</li>
+</ul>
+
+
+<p><code>pluck</code>, a method added to Rails in 3.2, solves that problem. Essentially, it selects a single column in your SQL query. I will give you a real example from Playfulbet code. In the first case, we make a <code>Bet</code> query loading thousands of <code>User</code> objects, which are quite heavy:</p>
+
+<pre><code>user_ids = User.where("created_at &lt; ?", Time.now.beginning_of_month).map(&amp;:id)
+Bet.where(:user_id =&gt; user_ids)
+</code></pre>
+
+<p>On the other hand, this loads only an array of integers for making the same query:</p>
+
+<pre><code>user_ids = User.where("created_at &lt; ?", Time.now.beginning_of_month).pluck(:id)
+Bet.where(:user_id =&gt; user_ids)
+</code></pre>
+
+<ul>
+<li><strong>Learn how your 3rd party code works</strong>: In this case, prevention is better than cure: choose very carefully your gems. Go for those who have a full test suite and GitHub activity. And even those have to be learnt, as the use you are doing of them can be optimized for your own purposes.</li>
+</ul>
+
+
+<p>A simple example: the very popular <code>will_paginate</code> performs a <code>SELECT COUNT</code> query to calculate the number of pages. This query can be avoided if you materialize its result and pass it directly to the paginate method in the <code>:total_entries</code> option. In this case, I paginate the bets of a user without querying the total amount and using counter-cache:</p>
+
+<pre><code>@bets = @user.bets.paginate(:page =&gt; params[:page], :total_entries =&gt; @user.bets_count)
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Playfulbet wins an investment forum]]></title>

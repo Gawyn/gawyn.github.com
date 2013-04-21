@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: rails | Cristian Planas]]></title>
-  <link href="http://Gawyn.github.com/blog/categories/rails/atom.xml" rel="self"/>
+  <title><![CDATA[Category: scaling | Cristian Planas]]></title>
+  <link href="http://Gawyn.github.com/blog/categories/scaling/atom.xml" rel="self"/>
   <link href="http://Gawyn.github.com/"/>
   <updated>2013-04-21T22:54:54+02:00</updated>
   <id>http://Gawyn.github.com/</id>
@@ -89,111 +89,6 @@ Bet.where(:user_id =&gt; user_ids)
 
 <pre><code>@bets = @user.bets.paginate(:page =&gt; params[:page], :total_entries =&gt; @user.bets_count)
 </code></pre>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Big models, small controllers]]></title>
-    <link href="http://Gawyn.github.com/blog/2012/02/01/big-models/"/>
-    <updated>2012-02-01T11:04:00+01:00</updated>
-    <id>http://Gawyn.github.com/blog/2012/02/01/big-models</id>
-    <content type="html"><![CDATA[<p>OK, yeah, the title of this entry is one of the most common and repeated
-sentences about Rails (and MVC in general) development. But there is
-something else: <strong>it's a big, big, truth</strong>.</p>
-
-<p>Being myself quite an eccentric developer, a lot of times I
-started in a language without caring about this kind of advises. OK, I
-follow most of the typical patterns -trying to maintain a scalable,
-blablabla code- but nothing very specific, certainly nothing that cares
-particularly about MVC.</p>
-
-<p>So when I started to develop my first Rails project, <a href="http://www.fundidoanegro.net">Fundido a Negro</a>
-, I gave a shit about maintaining
-small controllers and did as most Rails beginners do: creating
-grotesquely giant controllers. After some months, that made the code
-almost impossible to understand, and even if I could have continued with
-it, it was boring and confusing. So I stopped the project in a "more or
-less OK" phase and started with something else.</p>
-
-<p>After some months and experiences, I naturally understood what every
-Rails guru (and most of developers) say: a big controller is a terrible
-pain in the ass. But why a big model is (much) better than a big
-controller? I don't really know the correct reason; I only can adventure
-a few hypothesis that, I think, tell a lot about MVC.</p>
-
-<ul>
-<li><p><strong>What the fuck is a controller?</strong>. Of the three elements in the
-MVC, we can easily identify the first one with "real" objects (as in
-object-oriented); the views are, like in the famous tale, the only part
-of the real world (more like the data world) that users can see; they
-care about the relationship between the user and the models. So far,
-it's OK. But what are controllers? Only the middlemen, the border
-policemen between the world of the data/objects/models and the view
-country where users live.</p></li>
-<li><p><strong>Code in the model is easier to reuse and harder to duplicate</strong>. Imagine
-that in a given action, you need the first n objects which its relation
-x applies to a certain condition. If you write that method in the model you
-can reuse it any other time, or even define it as a scope and
-save you an awful lot of code. Giving access to every action of every controller to
-that method will save you from the dangers of duplication, and also will
-make you more conscious of the tools you already have created, as the
-models tends to be in the center.</p></li>
-<li><p><strong>A big model is good for your imagination</strong>. When you have available
-methods that deal with the data in your application in multiple
-different ways, it's easier for you to think about new features.</p></li>
-</ul>
-
-
-<p>Right now, I already feel like I'm repeating the obvious, but
-I will show you another example. Those two pieces of code to the same:</p>
-
-<p>Big controller style:</p>
-
-<pre><code>def index_by_trending
-  @premieretweets = Movie.with_tweet.inject([]) do |res,movie|
-    res &lt;&lt; movie.tweets.by_score[0]
-  end
-end
-</code></pre>
-
-<p>Small controller style:</p>
-
-<pre><code>def index_by_trending
-  @premieretweets = Tweet.index_trending
-end
-
-(In the model)
-def self.index_trending
-  tweets = Movie.with_tweet.inject([]) do |res,movie|
-    res &lt;&lt; movie.tweets.by_score[0]
-  end
-end
-</code></pre>
-
-<p>OK. Now let's imagine we create another action in the same controller,
-one that needs only the first 5 elements:</p>
-
-<p>Big controller style:</p>
-
-<pre><code>def short_index_by_trending
-  @premieretweets = Movie.with_tweet[0..5].inject([]) do |res,movie|
-    res &lt;&lt; movie.tweets.by_score[0]
-  end
-end
-</code></pre>
-
-<p>Small controller style:</p>
-
-<pre><code>def short_index_by_trending
-  @premieretweets = Tweet.index_trending[0..5]
-end
-</code></pre>
-
-<p>In the end, you are reusing and not repeating code with the "small
-controller style" solution and well, it also looks much tidier.</p>
-
-<p>Those are some of the reasons why I really appreciate initiatives like
-inherit_resources, even if I don't really use it so often (shame on me).</p>
 ]]></content>
   </entry>
   
