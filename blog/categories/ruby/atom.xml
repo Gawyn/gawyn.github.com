@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | Cristian Planas]]></title>
   <link href="http://Gawyn.github.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://Gawyn.github.com/"/>
-  <updated>2013-04-06T15:11:29+02:00</updated>
+  <updated>2013-04-21T22:53:40+02:00</updated>
   <id>http://Gawyn.github.com/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
@@ -34,6 +34,103 @@
 
 
 <p>Summarizing, looks like that Barcelona has a new you-can't-miss-it event. We are already waiting for 2013 tickets.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The beauty of Ruby conditionals]]></title>
+    <link href="http://Gawyn.github.com/blog/2012/02/16/the-beauty-of-ruby-conditionals/"/>
+    <updated>2012-02-16T01:15:00+01:00</updated>
+    <id>http://Gawyn.github.com/blog/2012/02/16/the-beauty-of-ruby-conditionals</id>
+    <content type="html"><![CDATA[<p>Conditionals define the way in which a language specifies its logic. With
+this, they not only define the way you are going to code: they are also
+stating what you can do, and the way you are going to think and feel about your
+applications. As I said in other entries, imagination is essential for a
+good developer, and for having a free imagination, a simple and flexible
+language -with its simple and flexible conditionals- is absolutely
+required.</p>
+
+<p>In this, Ruby also stands out. Developers not only are able to use the
+usual if and else idioms, but count with some nice additions.</p>
+
+<ul>
+<li><strong>Improving negative conditions</strong></li>
+</ul>
+
+
+<p>In any kind of code, negative conditions are used quite often: and the
+<code>if not</code> idiom is not natural at all. Ruby provides of an specific idiom
+to state a negative condition: <code>unless</code>. For example, this:</p>
+
+<pre><code>if array.length != 1
+</code></pre>
+
+<p>looks much more nice like this:</p>
+
+<pre><code>unless array.length == 1
+</code></pre>
+
+<p>This also has its counterpart in loops, as until is the opposite of while.</p>
+
+<ul>
+<li><strong>Ruby is an easy-going guy</strong></li>
+</ul>
+
+
+<p>And thinks that most of the time people are saying the truth. So when
+Ruby evaluates a variable as a condition, everything except nil and
+false will be passed as true. That has some interesting effects:</p>
+
+<pre><code>if 0 puts 'C developers, 0 is true in Ruby!'
+</code></pre>
+
+<ul>
+<li><strong>Moving the condition to the end</strong></li>
+</ul>
+
+
+<p>Ruby always try to be as readable as possible, so it adds a new way to
+define a condition: leaving it after the actual code. For example,
+following the example given before:</p>
+
+<pre><code>puts 'C developers, 0 is true in Ruby!' if 0
+</code></pre>
+
+<ul>
+<li><strong>Conditions are executed in order</strong></li>
+</ul>
+
+
+<p>That's a great help. For example, imagine we have this code:</p>
+
+<pre><code>puts "The length is 2" unless a.nil? || a.length == 2
+</code></pre>
+
+<p>In the case that a is nil, in other languages we would have an
+exception, as the nil element doesn't have any method called length. But
+Ruby is smart enough to know that in an OR you don't need to evaluate
+the other conditions if one is true.</p>
+
+<ul>
+<li><strong>The nil guard</strong></li>
+</ul>
+
+
+<p>When a Ruby beginners faces a piece of code, the most exotic idiom he
+can find will probably this: ||=. This is called the nil guard. It comes
+to save a typical problem: an assignation that only should be executed
+when the variable assigned is nil.</p>
+
+<pre><code>a ||= []
+</code></pre>
+
+<p>that's much better than</p>
+
+<pre><code>a = [] if a.nil?
+</code></pre>
+
+<p>it's just more elegant. As you can see, the nil guard is related with
+the executing the conditionals in order thing.</p>
 ]]></content>
   </entry>
   

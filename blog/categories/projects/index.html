@@ -92,11 +92,25 @@
 
 <article>
   
+<h1><a href="/blog/2012/12/10/playfulbet/">Playfulbet</a></h1>
+<time datetime="2012-12-10T17:17:00+01:00" pubdate><span class='month'>Dec</span> <span class='day'>10</span> <span class='year'>2012</span></time>
+
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/personal/'>personal</a>, <a class='category' href='/blog/categories/playfulbet/'>playfulbet</a>, <a class='category' href='/blog/categories/projects/'>projects</a></span>
+</footer>
+
+
+</article>
+
+
+
+<article>
+  
 <h1><a href="/blog/2012/02/08/presenting-tweetmovies/">Presenting TweetMovies</a></h1>
 <time datetime="2012-02-08T22:37:00+01:00" pubdate><span class='month'>Feb</span> <span class='day'>08</span> <span class='year'>2012</span></time>
 
 <footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/projects/'>projects</a>, <a class='category' href='/blog/categories/tweetmovies/'>tweetmovies</a></span>
+  <span class="categories">posted in <a class='category' href='/blog/categories/personal/'>personal</a>, <a class='category' href='/blog/categories/projects/'>projects</a>, <a class='category' href='/blog/categories/tweetmovies/'>tweetmovies</a></span>
 </footer>
 
 
@@ -168,7 +182,7 @@
 
         github.showRepos({
             user: 'gawyn',
-            count: 0,
+            count: 5,
             skip_forks: true,
             target: '#gh_repos'
         });
@@ -179,6 +193,63 @@
 
 
 
+
+
+<section>
+  <h1>Coderwall</h1>
+  <ul id="cw_badges">
+    <li class="loading">Status updating...</li>
+  </ul>
+
+  <script type="text/javascript">
+    var coderwall = (function(){
+      function render(options, badges){
+        var fragment = '',
+            t = $(options.target),
+            height = 65,
+            width = 65,
+            index;
+
+        for (index in badges) {
+          fragment += '<a class="cw_badge"title="' + badges[index].description + '" href="http://coderwall.com/' + options.user + '">';
+          fragment +=   '<img alt="' + badges[index].description + '" height="' + width + '" width="' + height + '" src="' + badges[index].badge + '"/>';
+          fragment += '</a>';
+        }
+
+        t.html(fragment);
+      }
+      return {
+        showBadges: function(options){
+          $.ajax({
+              url: 'http://coderwall.com/' + options.user + '.json?callback=?'
+            , dataType: 'jsonp'
+            , error: function (err) { $(options.target + ' li.loading').addClass('error').text("Error loading feed"); }
+            , success: function(res) {
+                render(options, res.data.badges);
+            }
+          });
+        }
+      };
+    })();
+
+    $(document).ready(function(){
+      coderwall.showBadges({
+        user: 'gawyn',
+        target: '#cw_badges'
+      });
+    });
+  </script>
+  <style type="text/css">
+    .cw_badge img {
+      padding: 5px;
+      border: 0 none !important;
+      -moz-box-shadow: none !important;
+      -webkit-box-shadow: none !important;
+      -o-box-shadow: none !important;
+      box-shadow: none !important;
+    }
+  </style>
+</section>
 
 
   

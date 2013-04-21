@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: playfulbet | Cristian Planas]]></title>
+  <link href="http://Gawyn.github.com/blog/categories/playfulbet/atom.xml" rel="self"/>
+  <link href="http://Gawyn.github.com/"/>
+  <updated>2013-04-21T22:53:40+02:00</updated>
+  <id>http://Gawyn.github.com/</id>
+  <author>
+    <name><![CDATA[Cristian Planas]]></name>
+    <email><![CDATA[me@cristianplanas.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Playfulbet wins an investment forum]]></title>
+    <link href="http://Gawyn.github.com/blog/2013/03/10/playfulbet-wins-an-investment-forum/"/>
+    <updated>2013-03-10T07:11:00+01:00</updated>
+    <id>http://Gawyn.github.com/blog/2013/03/10/playfulbet-wins-an-investment-forum</id>
+    <content type="html"><![CDATA[<p>Some weeks ago, my partner and me made a pitch at one of the most important investment forums in Spain, the First Tuesday. In it, we presented <a href="http://playfulbet.com">Playfulbet</a> to Business Angels and Venture Capital Funds. And it looks like that they liked our project, as <strong>the assistants chose us as the best project presented.</strong></p>
+
+<p><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/foroFT_feb-13_peq.png" title="Presenting Playfulbet to investors" alt="Pol and me presenting Playfulbet"></p>
+
+<p>Even if this victory doesn't imply any investment, it obviously shows the potential of <a href="http://playfulbet.com">Playfulbet</a>. We thank all the First Tuesday attendants for trusting us.</p>
+
+<p>You can read more about it <a href="http://blog.firsttuesday.es/?p=1049">here</a> (in Spanish).</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Playfulbet]]></title>
+    <link href="http://Gawyn.github.com/blog/2012/12/10/playfulbet/"/>
+    <updated>2012-12-10T17:17:00+01:00</updated>
+    <id>http://Gawyn.github.com/blog/2012/12/10/playfulbet</id>
+    <content type="html"><![CDATA[<p>Last month, after seven happy months working at <a href="http://itnig.net">Itnig</a>, I started a new professional challenge: from now, I am the CTO of <a href="http://playfulbet.com">Playfulbet</a>.</p>
+
+<p>Until now, I was Senior Ruby developer and Project Manager at Itnig: a start-up accelerator. There I worked as developer in projects like PharmaDating or the Instituto Maxilofacial website. But my main task was being the project manager (and lead developer) of Playfulbet. And I liked the project so much that I decided to dedicate myself entirely to it.</p>
+
+<p><a href="http://playfulbet.com"><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/playfulbet-with-characters.jpg" title="Playfulbet logo" alt="Playfulbet logo"></a></p>
+
+<p>So a big nominal change (from Ruby developer in one company to CTO in another), but smaller in fact: I am still the man behind Playfulbet. Maybe the real change is philosophical. Before I was a developer who happened to like the start-up environment; now I am also risking myself as an entrepreneur.</p>
+
+<p><a href="http://playfulbet.com"><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/pfb-en-cover.png" title="Playfulbet homepage" alt="Playfulbet homepage"></a></p>
+
+<p>¿And why did I decide to risk myself? First of all, I think that Playfulbet is an extremely cool project with a bright future ahead. Playfulbet is a sports betting social game, a project that puts together two areas which are greatly growing: social gaming and gambling. Also it has some of the elements that attract me more to a project: big data (bets and users data) and a social aspect.</p>
+
+<p>Wish me luck!</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: conferences | Cristian Planas]]></title>
   <link href="http://Gawyn.github.com/blog/categories/conferences/atom.xml" rel="self"/>
   <link href="http://Gawyn.github.com/"/>
-  <updated>2013-04-06T15:11:29+02:00</updated>
+  <updated>2013-04-21T22:53:40+02:00</updated>
   <id>http://Gawyn.github.com/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
@@ -12,6 +12,54 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[On Slideshare homepage]]></title>
+    <link href="http://Gawyn.github.com/blog/2013/01/16/on-slideshare-cover/"/>
+    <updated>2013-01-16T20:17:00+01:00</updated>
+    <id>http://Gawyn.github.com/blog/2013/01/16/on-slideshare-cover</id>
+    <content type="html"><![CDATA[<p><a href="/blog/2013/01/14/one-graph-to-rule-them-all/">In my last post</a>, I showed you <a href="http://www.slideshare.net/itnig/open-graphpresentation">One Graph to rule the all</a>, the presentation I made at <a href="http://itnig.net/en/events/one-graph-to-rule-them-all-how-to-integrate-your-application-with-facebook">Itnig's Fridays</a> (a popular event in the start-up scene in Barcelona).</p>
+
+<p>This same presentation brought me a nice surprise today. It was featured in Slideshare homepage:</p>
+
+<p><a href="https://twitter.com/slideshare/status/291448965008855040"><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/one-graph-to-rule-them-all-slideshare.png" title="Presenting Playfulbet to investors" alt="Pol and me presenting Playfulbet"></a>
+<em>Sorry, I couldn't take any screenshot of the actual Slideshare homepage.</em></p>
+
+<p>Mine was the first Itnig's Fridays presentation featured in this popular site homepage. I hope this helps to extend the use of Open Graph!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[One Graph to rule them all]]></title>
+    <link href="http://Gawyn.github.com/blog/2013/01/14/one-graph-to-rule-them-all/"/>
+    <updated>2013-01-14T23:39:00+01:00</updated>
+    <id>http://Gawyn.github.com/blog/2013/01/14/one-graph-to-rule-them-all</id>
+    <content type="html"><![CDATA[<p>In <a href="http://playfulbet.com">Playfulbet</a>, we decided to use all the tools available to make ourselves viral since day one. And very soon we discovered that Facebook Open Graph was extremely valuable. Right now, this is giving us around <strong>600.000 prints and 5.000 clicks every month</strong>, totally for free. Also, given that the prints are triggered by users' actions, those numbers will increase with more users. So more users bring more Graph actions and more Graph actions bring more users. <strong>It's a snowball effect: pure virality.</strong></p>
+
+<p>To explain this, and much more, I made the presentation <em>One Graph to rule them all: Integrating your application with Facebook</em> at <a href="http://itnig.net/en/events/one-graph-to-rule-them-all-how-to-integrate-your-application-with-facebook">Itnig's Fridays</a>. In the presentation, I described all the process that a developer must follow to publish its application's actions in the Open Graph: asking the right permission from the user, creating a page for every object that will be used in the actions and, finally, defining the action itself. I also talked about the most typical issues: the weird behaviour of Facebook's cache and the unpredictable response of Facebook staff when they have to approve your action. I finished the presentation remarking what a great difference can this make in your application visibility.</p>
+
+<p><div class="embed-responsive-container"><iframe src="http://www.slideshare.net/slideshow/embed_code/15989065 "></iframe></div></p>
+
+<p>Usually all the Itnig's Fridays talks are recorded, but this was lost because of some weird technical error. Anyway, if you have any doubts about the presentation or the Open Graph, you can tweet me at <a href="https://twitter.com/cristianplanas">@cristianplanas</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A short history of Software Engineering]]></title>
+    <link href="http://Gawyn.github.com/blog/2012/10/25/a-short-history-of-software-engineering/"/>
+    <updated>2012-10-25T18:31:00+02:00</updated>
+    <id>http://Gawyn.github.com/blog/2012/10/25/a-short-history-of-software-engineering</id>
+    <content type="html"><![CDATA[<p><a href="/blog/2012/09/11/baruco-2012-review/">As I told you some posts ago</a>, I loved the talk that Paolo Perrota gave at BaRuCo: <em>A short history of Software Engineering</em>. In it, Paolo explained showed why we, the developers/IT guys/nerds/whatever are not engineers and why the idea of "software engineering" itself is wrong. Also he showed us why developers can't be replaced completely, as so many thought they would be. As he tells in the speak, when the complexity is in the problem, you can't avoid it in the solution, and you need someone to overcome it.</p>
+
+<p>Anyway it would be much better if the speaker explains himself:</p>
+
+<p><div class="embed-responsive-container"><iframe src="http://www.youtube.com/embed/9IPn5Gk_OiM "></iframe></div></p>
+
+<p>PD: And by the way, in the last BaRuCo I was able to talk with him and get his book signed.</p>
+
+<p><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/metaprogramming_ruby_signed.jpg" title="Metaprogramming Ruby signed" alt="Metaprogramming Ruby signed by its author"></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Programmer Anarchy]]></title>

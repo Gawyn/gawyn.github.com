@@ -113,7 +113,7 @@
 
 <p><a href="http://playfulbet.com"><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/pfb-en-cover.png" title="Playfulbet homepage" alt="Playfulbet homepage"></a></p>
 
-<p>¿And why I decided to risk myself? First of all, I think that Playfulbet is an extremely cool project with a bright future ahead. Playfulbet is a sports betting social game, a project that puts together two areas which are greatly growing: social gaming and gambling. Also it has some of the elements that attract me more to a project: big data (bets and users data) and a social aspect.</p>
+<p>¿And why did I decide to risk myself? First of all, I think that Playfulbet is an extremely cool project with a bright future ahead. Playfulbet is a sports betting social game, a project that puts together two areas which are greatly growing: social gaming and gambling. Also it has some of the elements that attract me more to a project: big data (bets and users data) and a social aspect.</p>
 
 <p>Wish me luck!</p>
 </div>
@@ -140,6 +140,12 @@
 
 <time datetime="2012-12-10T17:17:00+01:00" pubdate data-updated="true">Dec 10<span>th</span>, 2012</time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/personal/'>personal</a>, <a class='category' href='/blog/categories/playfulbet/'>playfulbet</a>, <a class='category' href='/blog/categories/projects/'>projects</a>
+  
+</span>
 
 
     </p>
@@ -231,7 +237,7 @@
 
         github.showRepos({
             user: 'gawyn',
-            count: 0,
+            count: 5,
             skip_forks: true,
             target: '#gh_repos'
         });
@@ -242,6 +248,63 @@
 
 
 
+
+
+<section>
+  <h1>Coderwall</h1>
+  <ul id="cw_badges">
+    <li class="loading">Status updating...</li>
+  </ul>
+
+  <script type="text/javascript">
+    var coderwall = (function(){
+      function render(options, badges){
+        var fragment = '',
+            t = $(options.target),
+            height = 65,
+            width = 65,
+            index;
+
+        for (index in badges) {
+          fragment += '<a class="cw_badge"title="' + badges[index].description + '" href="http://coderwall.com/' + options.user + '">';
+          fragment +=   '<img alt="' + badges[index].description + '" height="' + width + '" width="' + height + '" src="' + badges[index].badge + '"/>';
+          fragment += '</a>';
+        }
+
+        t.html(fragment);
+      }
+      return {
+        showBadges: function(options){
+          $.ajax({
+              url: 'http://coderwall.com/' + options.user + '.json?callback=?'
+            , dataType: 'jsonp'
+            , error: function (err) { $(options.target + ' li.loading').addClass('error').text("Error loading feed"); }
+            , success: function(res) {
+                render(options, res.data.badges);
+            }
+          });
+        }
+      };
+    })();
+
+    $(document).ready(function(){
+      coderwall.showBadges({
+        user: 'gawyn',
+        target: '#cw_badges'
+      });
+    });
+  </script>
+  <style type="text/css">
+    .cw_badge img {
+      padding: 5px;
+      border: 0 none !important;
+      -moz-box-shadow: none !important;
+      -webkit-box-shadow: none !important;
+      -o-box-shadow: none !important;
+      box-shadow: none !important;
+    }
+  </style>
+</section>
 
 
   
