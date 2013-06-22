@@ -4,7 +4,7 @@
   <title><![CDATA[Cristian Planas]]></title>
   <link href="http://Gawyn.github.com/atom.xml" rel="self"/>
   <link href="http://Gawyn.github.com/"/>
-  <updated>2013-04-21T22:54:54+02:00</updated>
+  <updated>2013-06-22T22:56:03+02:00</updated>
   <id>http://Gawyn.github.com/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[On Startup Metrics]]></title>
+    <link href="http://Gawyn.github.com/blog/2013/06/22/on-startup-metrics/"/>
+    <updated>2013-06-22T21:39:00+02:00</updated>
+    <id>http://Gawyn.github.com/blog/2013/06/22/on-startup-metrics</id>
+    <content type="html"><![CDATA[<p>Since I read <a href="http://theleanstartup.com/">The Lean Startup</a> for the first time, I have always been interested in metrics. Soon I discovered that developers have a nice advantage over pure marketing guys, as we are able to &#8220;cook&#8221; our own metrics and also we have a better understanding of how the metrics services as KISSmetrics or Mixpanel work. Actually, I like this topic so much that I started to code a metrics service called DataMorlock: I even bought the domain. Fear me, KISSmetrics!</p>
+
+<p>Anyway, last week I was able to share my experiences on startup metrics in a talk in the <a href="http://www.conversionthursday.com/?p=2100">Conversion Thursday Barcelona</a>, a monthly event about web analytics and marketing online.</p>
+
+<p>Unluckily, the talk was in Spanish: I hope my next one will be in English. Anyway, enjoy it!</p>
+
+<div class="embed-responsive-container"><iframe src="http://player.vimeo.com/video/68364757 "></iframe></div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Scaling a Rails application: code tips]]></title>
