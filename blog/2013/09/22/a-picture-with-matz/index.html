@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>TDD != BDD - Cristian Planas</title>
+  <title>A picture with Matz - Cristian Planas</title>
   <meta name="author" content="Cristian Planas">
 
   
-  <meta name="description" content="Talking with other developers, sometimes I notice a kind of confusion
-around the terms &#8216;TDD&#8217; and &#8216;BDD&#8217;. That was specially &hellip;">
+  <meta name="description" content="
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@ around the terms &#8216;TDD&#8217; and &#8216;BDD&#8217;. That was specially &he
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://Gawyn.github.com/blog/2012/02/03/tdd-equals-bdd">
+  <link rel="canonical" href="http://Gawyn.github.com/blog/2013/09/22/a-picture-with-matz">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Cristian Planas" type="application/atom+xml">
@@ -81,7 +81,7 @@ around the terms &#8216;TDD&#8217; and &#8216;BDD&#8217;. That was specially &he
   
   <header>
     
-      <h1 class="entry-title">TDD != BDD</h1>
+      <h1 class="entry-title">A Picture With Matz</h1>
     
     
       <p class="meta">
@@ -97,71 +97,14 @@ around the terms &#8216;TDD&#8217; and &#8216;BDD&#8217;. That was specially &he
   
 
 
-<time datetime="2012-02-03T20:35:00+01:00" pubdate data-updated="true">Feb 3<span>rd</span>, 2012</time>
+<time datetime="2013-09-22T22:08:00+02:00" pubdate data-updated="true">Sep 22<span>nd</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Talking with other developers, sometimes I notice a kind of confusion
-around the terms &#8216;TDD&#8217; and &#8216;BDD&#8217;. That was specially strange for me in the RuPy 2011,
-when I was still not very sure of the difference between those two
-software development techniques, and (at least for me) everyone used
-them indifferently.</p>
-
-<p>But they are not the same. In fact, BDD is an evolution, or an
-extension, of TDD. Let&#8217;s try to define and point out the difference
-between them.</p>
-
-<h2>TDD (Test-Driven Development)</h2>
-
-<blockquote><p>All code is guilty until proven innocent.</p></blockquote>
-
-<p>In the university, we are taught that the main phases of the software are specification, design,
- implementation and testing, in this order. In TDD, testing comes before implementation;
- and thanks to some testing tools, it can be used as a kind of specification.</p>
-
-<p>In a TDD process, we develop first the test and then we work on the &#8220;real&#8221;
- code until the test accepts it. In an advanced project, when we implement
- a change into the code, we run all the tests, and not only the new one:
- like this we can detect quickly if a new piece of code is causing
- errors in old features.</p>
-
-<p><em>The TDD process:</em>
-<img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/tddSteps.jpg" title="TDD" alt="A diagram of TDD"></p>
-
-<h2>BDD (Behavior-Driven Development)</h2>
-
-<p>BDD is a business-like, natural language, user-approach to TDD. In it,
-we first define an acceptance test: we execute it and, obviously, it fails.
-Then we define a unit test: it fails too. Then, and only then, we can
-start with the code itself. When the given unit test passes, we execute
-again the acceptance test, and if it fails, we start the process all
-over again with a new unit test.</p>
-
-<p>Using Ruby speech, we could say that <strong>BDD wraps an acceptance test
-around a group of unit tests.</strong></p>
-
-<p><em>The BDD process:</em>
-<img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/atdd.jpg" title="TDD" alt="A diagram of TDD"></p>
-
-<p>In BDD we also try to make tests particularly readable, using tools like
-Rspec and Cucumber.</p>
-
-<h2>Conclusion</h2>
-
-<p>Even if it&#8217;s an expansion, and a good one, BDD is not &#8220;better&#8221; than TDD.
-It&#8217;s just different. In some cases, using BDD doesn&#8217;t have sense.
-For example, in a gem or a plugin, to test the behavior of the user is
-just impossible.</p>
-
-<p>Actually, developers instinctively understand that: they just are confused
-by the similar names of B(bi)DD and T(ti)DD. You don&#8217;t develop a gem using
-BDD, even if it sounds cool: it&#8217;s TDD.</p>
-
-<p>PS: Another day we should talk if BDD and TDD are so useful or if it&#8217;s
-only a hype.</p>
+<div class="entry-content"><p><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/me-and-matz.jpg" title="A picture with Matz" alt="A picture with Matz at the BaRuCo 2013"></p>
 </div>
 
 
@@ -184,12 +127,12 @@ only a hype.</p>
   
 
 
-<time datetime="2012-02-03T20:35:00+01:00" pubdate data-updated="true">Feb 3<span>rd</span>, 2012</time>
+<time datetime="2013-09-22T22:08:00+02:00" pubdate data-updated="true">Sep 22<span>nd</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/agile/'>agile</a>, <a class='category' href='/blog/categories/bdd/'>bdd</a>
+    <a class='category' href='/blog/categories/events/'>events</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a>
   
 </span>
 
@@ -198,7 +141,7 @@ only a hype.</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://Gawyn.github.com/blog/2012/02/03/tdd-equals-bdd/" data-via="cristianplanas" data-counturl="http://Gawyn.github.com/blog/2012/02/03/tdd-equals-bdd/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://Gawyn.github.com/blog/2013/09/22/a-picture-with-matz/" data-via="cristianplanas" data-counturl="http://Gawyn.github.com/blog/2013/09/22/a-picture-with-matz/" >Tweet</a>
   
   
   
@@ -207,10 +150,8 @@ only a hype.</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/02/01/big-models/" title="Previous Post: Big models, small controllers">&laquo; Big models, small controllers</a>
+        <a class="basic-alignment left" href="/blog/2013/06/22/on-startup-metrics/" title="Previous Post: On Startup Metrics">&laquo; On Startup Metrics</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/02/05/programmer-anarchy/" title="Next Post: Programmer Anarchy">Programmer Anarchy &raquo;</a>
       
     </p>
   </footer>
@@ -372,8 +313,8 @@ only a hype.</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://Gawyn.github.com/blog/2012/02/03/tdd-equals-bdd/';
-        var disqus_url = 'http://Gawyn.github.com/blog/2012/02/03/tdd-equals-bdd/';
+        var disqus_identifier = 'http://Gawyn.github.com/blog/2013/09/22/a-picture-with-matz/';
+        var disqus_url = 'http://Gawyn.github.com/blog/2013/09/22/a-picture-with-matz/';
         var disqus_script = 'embed.js';
       
     (function () {
