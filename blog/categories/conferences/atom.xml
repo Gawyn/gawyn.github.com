@@ -4,7 +4,7 @@
   <title><![CDATA[Category: conferences | Cristian Planas]]></title>
   <link href="http://Gawyn.github.com/blog/categories/conferences/atom.xml" rel="self"/>
   <link href="http://Gawyn.github.com/"/>
-  <updated>2013-09-22T22:17:51+02:00</updated>
+  <updated>2013-12-09T23:39:13+01:00</updated>
   <id>http://Gawyn.github.com/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The Black Magic of Ruby Metaprogramming]]></title>
+    <link href="http://Gawyn.github.com/blog/2013/10/27/the-black-magic-of-ruby-metaprogramming/"/>
+    <updated>2013-10-27T22:46:00+01:00</updated>
+    <id>http://Gawyn.github.com/blog/2013/10/27/the-black-magic-of-ruby-metaprogramming</id>
+    <content type="html"><![CDATA[<p>Last Friday I gave another talk at the accelerator Itnig's offices. After presenting about <a href="http://cristianplanas.com/blog/2013/01/14/one-graph-to-rule-them-all/">growth hacking and Facebook</a>, this time I went more technical. I explained one of the most interesting concepts in Ruby: metaprogramming.</p>
+
+<p>Using the story of The Sorcerer's Apprentice -the one with Mickey Mouse, not the one with Nicholas Cage-, I explain what is metaprogramming, the most common techniques and some of its dangers.</p>
+
+<p><div class="embed-responsive-container"><iframe src="http://www.slideshare.net/slideshow/embed_code/27655078 "></iframe></div></p>
+
+<p>You can also watch the presentation in video:</p>
+
+<p><div class="embed-responsive-container"><iframe src="http://player.vimeo.com/video/79437180 "></iframe></div></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[On Startup Metrics]]></title>
@@ -73,38 +90,6 @@
 <p>PD: And by the way, in the last BaRuCo I was able to talk with him and get his book signed.</p>
 
 <p><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/metaprogramming_ruby_signed.jpg" title="Metaprogramming Ruby signed" alt="Metaprogramming Ruby signed by its author"></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Programmer Anarchy]]></title>
-    <link href="http://Gawyn.github.com/blog/2012/02/05/programmer-anarchy/"/>
-    <updated>2012-02-05T13:10:00+01:00</updated>
-    <id>http://Gawyn.github.com/blog/2012/02/05/programmer-anarchy</id>
-    <content type="html"><![CDATA[<p>In the <a href="http://rupy.eu/">Rupy 2011</a>, I assisted to some very interesting
-conferences, like the ones by <a href="https://twitter.com/#!/josevalim">José Valim</a> or <a href="https://twitter.com/#!/wycats">Yehuda Katz</a>.
- But the conference I remember the most is, by far, Programmer Anarchy.</p>
-
-<p>In it, <a href="https://twitter.com/#!/fgeorge52">Fred George</a> exposes with a great amount of humor a development
-process where programmers are not just developing the application, but
-designing and modifying it beyond the customer's expectations. He
-also reasons the need of removing certain roles (most of them, actually)
-that don't produce code in the development process. As the popular agile (or antiagile?) manifesto says...
-<a href="http://programming-motherfucker.com/">Programming, Motherfucker!</a></p>
-
-<p>Personally, I have always thought that developers should take a more
-active role when discussing the application with the customer: how many
-times have we ended coding some feature that we knew for sure that was
-stupid? We have to remember that, in the end, we are fucking technology
-experts, specially compared to most of the clients (yeah, not being too
-humble now). We should be stakeholders, and not minor ones, of our own
-projects.</p>
-
-<p>Here you can watch the conference. I would recommend it, even if you are
-not very interested in the topic. If you know the IT world, it's really
-hilarous:</p>
-
-<p><div class="embed-responsive-container"><iframe src="http://player.vimeo.com/video/32447325 "></iframe></div></p>
 ]]></content>
   </entry>
   

@@ -9,7 +9,7 @@
   <meta name="author" content="Cristian Planas">
 
   
-  <meta name="description" content="Facebook organizes some events, the Facebook World Hacks, to evangelize developers with its newest features. Some days ago it was the turn of &hellip;">
+  <meta name="description" content="As I told you some posts ago, I loved the talk that Paolo Perrota gave at BaRuCo: A short history of Software Engineering. In it, Paolo explained &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,51 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/10/25/a-short-history-of-software-engineering/">A Short History of Software Engineering</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-25T18:31:00+02:00" pubdate data-updated="true">Oct 25<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="/blog/2012/09/11/baruco-2012-review/">As I told you some posts ago</a>, I loved the talk that Paolo Perrota gave at BaRuCo: <em>A short history of Software Engineering</em>. In it, Paolo explained showed why we, the developers/IT guys/nerds/whatever are not engineers and why the idea of &#8220;software engineering&#8221; itself is wrong. Also he showed us why developers can&#8217;t be replaced completely, as so many thought they would be. As he tells in the speak, when the complexity is in the problem, you can&#8217;t avoid it in the solution, and you need someone to overcome it.</p>
+
+<p>Anyway it would be much better if the speaker explains himself:</p>
+
+<div class="embed-responsive-container"><iframe src="http://www.youtube.com/embed/9IPn5Gk_OiM "></iframe></div>
+
+
+<p>PD: And by the way, in the last BaRuCo I was able to talk with him and get his book signed.</p>
+
+<p><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/metaprogramming_ruby_signed.jpg" title="Metaprogramming Ruby signed" alt="Metaprogramming Ruby signed by its author"></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -582,138 +627,6 @@ only a hype.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/02/01/big-models/">Big Models, Small Controllers</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-02-01T11:04:00+01:00" pubdate data-updated="true">Feb 1<span>st</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>OK, yeah, the title of this entry is one of the most common and repeated
-sentences about Rails (and MVC in general) development. But there is
-something else: <strong>it&#8217;s a big, big, truth</strong>.</p>
-
-<p>Being myself quite an eccentric developer, a lot of times I
-started in a language without caring about this kind of advises. OK, I
-follow most of the typical patterns -trying to maintain a scalable,
-blablabla code- but nothing very specific, certainly nothing that cares
-particularly about MVC.</p>
-
-<p>So when I started to develop my first Rails project, <a href="http://www.fundidoanegro.net">Fundido a Negro</a>
-, I gave a shit about maintaining
-small controllers and did as most Rails beginners do: creating
-grotesquely giant controllers. After some months, that made the code
-almost impossible to understand, and even if I could have continued with
-it, it was boring and confusing. So I stopped the project in a &#8220;more or
-less OK&#8221; phase and started with something else.</p>
-
-<p>After some months and experiences, I naturally understood what every
-Rails guru (and most of developers) say: a big controller is a terrible
-pain in the ass. But why a big model is (much) better than a big
-controller? I don&#8217;t really know the correct reason; I only can adventure
-a few hypothesis that, I think, tell a lot about MVC.</p>
-
-<ul>
-<li><p><strong>What the fuck is a controller?</strong>. Of the three elements in the
-MVC, we can easily identify the first one with &#8220;real&#8221; objects (as in
-object-oriented); the views are, like in the famous tale, the only part
-of the real world (more like the data world) that users can see; they
-care about the relationship between the user and the models. So far,
-it&#8217;s OK. But what are controllers? Only the middlemen, the border
-policemen between the world of the data/objects/models and the view
-country where users live.</p></li>
-<li><p><strong>Code in the model is easier to reuse and harder to duplicate</strong>. Imagine
-that in a given action, you need the first n objects which its relation
-x applies to a certain condition. If you write that method in the model you
-can reuse it any other time, or even define it as a scope and
-save you an awful lot of code. Giving access to every action of every controller to
-that method will save you from the dangers of duplication, and also will
-make you more conscious of the tools you already have created, as the
-models tends to be in the center.</p></li>
-<li><p><strong>A big model is good for your imagination</strong>. When you have available
-methods that deal with the data in your application in multiple
-different ways, it&#8217;s easier for you to think about new features.</p></li>
-</ul>
-
-
-<p>Right now, I already feel like I&#8217;m repeating the obvious, but
-I will show you another example. Those two pieces of code to the same:</p>
-
-<p>Big controller style:</p>
-
-<pre><code>def index_by_trending
-  @premieretweets = Movie.with_tweet.inject([]) do |res,movie|
-    res &lt;&lt; movie.tweets.by_score[0]
-  end
-end
-</code></pre>
-
-<p>Small controller style:</p>
-
-<pre><code>def index_by_trending
-  @premieretweets = Tweet.index_trending
-end
-
-(In the model)
-def self.index_trending
-  tweets = Movie.with_tweet.inject([]) do |res,movie|
-    res &lt;&lt; movie.tweets.by_score[0]
-  end
-end
-</code></pre>
-
-<p>OK. Now let&#8217;s imagine we create another action in the same controller,
-one that needs only the first 5 elements:</p>
-
-<p>Big controller style:</p>
-
-<pre><code>def short_index_by_trending
-  @premieretweets = Movie.with_tweet[0..5].inject([]) do |res,movie|
-    res &lt;&lt; movie.tweets.by_score[0]
-  end
-end
-</code></pre>
-
-<p>Small controller style:</p>
-
-<pre><code>def short_index_by_trending
-  @premieretweets = Tweet.index_trending[0..5]
-end
-</code></pre>
-
-<p>In the end, you are reusing and not repeating code with the &#8220;small
-controller style&#8221; solution and well, it also looks much tidier.</p>
-
-<p>Those are some of the reasons why I really appreciate initiatives like
-inherit_resources, even if I don&#8217;t really use it so often (shame on me).</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -741,6 +654,10 @@ inherit_resources, even if I don&#8217;t really use it so often (shame on me).</
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/10/27/the-black-magic-of-ruby-metaprogramming/">The Black Magic of Ruby Metaprogramming</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/09/22/a-picture-with-matz/">A picture with Matz</a>
       </li>
     
@@ -754,10 +671,6 @@ inherit_resources, even if I don&#8217;t really use it so often (shame on me).</
     
       <li class="post">
         <a href="/blog/2013/03/10/playfulbet-wins-an-investment-forum/">Playfulbet wins an investment forum</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/01/16/on-slideshare-cover/">On Slideshare homepage</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | Cristian Planas]]></title>
   <link href="http://Gawyn.github.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://Gawyn.github.com/"/>
-  <updated>2013-09-22T22:17:51+02:00</updated>
+  <updated>2013-12-09T23:39:13+01:00</updated>
   <id>http://Gawyn.github.com/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The Black Magic of Ruby Metaprogramming]]></title>
+    <link href="http://Gawyn.github.com/blog/2013/10/27/the-black-magic-of-ruby-metaprogramming/"/>
+    <updated>2013-10-27T22:46:00+01:00</updated>
+    <id>http://Gawyn.github.com/blog/2013/10/27/the-black-magic-of-ruby-metaprogramming</id>
+    <content type="html"><![CDATA[<p>Last Friday I gave another talk at the accelerator Itnig's offices. After presenting about <a href="http://cristianplanas.com/blog/2013/01/14/one-graph-to-rule-them-all/">growth hacking and Facebook</a>, this time I went more technical. I explained one of the most interesting concepts in Ruby: metaprogramming.</p>
+
+<p>Using the story of The Sorcerer's Apprentice -the one with Mickey Mouse, not the one with Nicholas Cage-, I explain what is metaprogramming, the most common techniques and some of its dangers.</p>
+
+<p><div class="embed-responsive-container"><iframe src="http://www.slideshare.net/slideshow/embed_code/27655078 "></iframe></div></p>
+
+<p>You can also watch the presentation in video:</p>
+
+<p><div class="embed-responsive-container"><iframe src="http://player.vimeo.com/video/79437180 "></iframe></div></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[A picture with Matz]]></title>
