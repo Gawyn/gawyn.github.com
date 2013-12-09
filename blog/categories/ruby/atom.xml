@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | Cristian Planas]]></title>
   <link href="http://Gawyn.github.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://Gawyn.github.com/"/>
-  <updated>2013-12-10T00:32:54+01:00</updated>
+  <updated>2013-12-10T00:46:44+01:00</updated>
   <id>http://Gawyn.github.com/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
@@ -35,7 +35,13 @@
     <link href="http://Gawyn.github.com/blog/2013/09/22/a-picture-with-matz/"/>
     <updated>2013-09-22T22:08:00+02:00</updated>
     <id>http://Gawyn.github.com/blog/2013/09/22/a-picture-with-matz</id>
-    <content type="html"><![CDATA[<p><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/me-and-matz.jpg" title="A picture with Matz" alt="A picture with Matz at the BaRuCo 2013"></p>
+    <content type="html"><![CDATA[<p>I met Matz at <a href="http://www.baruco.org/">Baruco</a>!</p>
+
+<p><img class="center" src="https://s3-eu-west-1.amazonaws.com/cristianplanas-blog/me-and-matz.jpg" title="A picture with Matz" alt="A picture with Matz at the BaRuCo 2013"></p>
+
+<p>By the way, you should watch his keynote. The best moment: "Designing a language means programming programmer's mind. So I designed a language that programmed you. I brainwash you!" (16:35).</p>
+
+<p><div class="embed-responsive-container"><iframe src="http://www.youtube.com/embed/6vdum5aXew8 "></iframe></div></p>
 ]]></content>
   </entry>
   
