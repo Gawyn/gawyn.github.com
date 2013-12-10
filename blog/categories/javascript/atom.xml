@@ -4,7 +4,7 @@
   <title><![CDATA[Category: javascript | Cristian Planas]]></title>
   <link href="http://Gawyn.github.com/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://Gawyn.github.com/"/>
-  <updated>2013-12-10T00:46:44+01:00</updated>
+  <updated>2013-12-10T12:33:25+01:00</updated>
   <id>http://Gawyn.github.com/</id>
   <author>
     <name><![CDATA[Cristian Planas]]></name>
@@ -20,19 +20,7 @@
     <id>http://Gawyn.github.com/blog/2012/11/15/a-simple-solution-for-a-simple-js-problem</id>
     <content type="html"><![CDATA[<p>Some time ago, in an interview, I had to do a pretty simple JS problem. To write a function that would make all the elements in a menu to change color when the cursor passes on one of them: all the items except the one that has been "hovered". Today I remembered it and decided to publish a solution here:</p>
 
-<pre><code>change_color = function(){
-  k = $(this); 
-  if(!k.is(element)){ 
-    k.css("background-color", "red")
-  }
-}
-
-f = function(){
-  element = $(this); 
-  $.each($("#menu li"), change_color)
-}
-
-$("#menu li").on("hover", f)
+<pre><code>$("#menu li").on("hover", $(this).siblings().css("background-color", "red"))
 </code></pre>
 ]]></content>
   </entry>
