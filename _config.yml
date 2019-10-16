@@ -1,3 +1,4 @@
 include: 
-  - .well-known
-  - .well-known/acme-challenge
+  - ".well-known"
+  - ".well-known/acme-challenge"
+  - ".nojekyll"
